@@ -1,0 +1,108 @@
+{
+  "header": {
+    "count": 3,
+    "data_as_of": {
+      "newest": null,
+      "oldest": null
+    },
+    "edition": "2026-10-26",
+    "file": "weekly",
+    "method_url": "https://hypenomia.com/en/methods/engagement",
+    "method_version": "px11-highlights-v1",
+    "missing_reason": null,
+    "period": {
+      "end": "2026-10-26",
+      "end_exclusive": true,
+      "start": "2026-10-19",
+      "tz": "Europe/Istanbul"
+    },
+    "schema_version": "px11-public-edition-v1",
+    "snapshot_id": "2026-10-26.r1",
+    "source_url": "https://hypenomia.com/data/public/2026-10-26/weekly.json",
+    "status": "published"
+  },
+  "items": [
+    {
+      "category": "beauty",
+      "display_name": "Sentetik Güzellik A",
+      "followers": {
+        "as_of": "2026-10-25",
+        "missing_reason": null,
+        "rounded": 48000,
+        "unit": 1000
+      },
+      "handle": "synthetic_beauty_a",
+      "highlight": {
+        "baseline_n": 41,
+        "comments": 188,
+        "content_type": "post",
+        "like_multiple": 5.0,
+        "likes": 6150,
+        "likes_as_of": null,
+        "posted_on": "2026-10-22",
+        "url": "https://www.instagram.com/p/SynBeautyA01/",
+        "usual_likes": 1230
+      },
+      "slug": "sentetik-guzellik-a",
+      "tier": "micro"
+    },
+    {
+      "category": "travel",
+      "display_name": "Sentetik Seyahat A",
+      "followers": {
+        "as_of": "2026-10-15",
+        "missing_reason": null,
+        "rounded": 1400000,
+        "unit": 100000
+      },
+      "handle": "synthetic_travel_a",
+      "highlight": {
+        "baseline_n": 52,
+        "comments": 1940,
+        "content_type": "reel",
+        "like_multiple": 4.1,
+        "likes": 61250,
+        "likes_as_of": null,
+        "posted_on": "2026-10-24",
+        "url": "https://www.instagram.com/reel/SynTravelA01/",
+        "usual_likes": 15100
+      },
+      "slug": "sentetik-seyahat-a",
+      "tier": "mega"
+    },
+    {
+      "category": "tech_business_education",
+      "display_name": "Sentetik Teknoloji A",
+      "followers": {
+        "as_of": null,
+        "missing_reason": "measurement_date_unknown",
+        "rounded": 130000,
+        "unit": 10000
+      },
+      "handle": "synthetic_tech_a",
+      "highlight": {
+        "baseline_n": 27,
+        "comments": 96,
+        "content_type": "post",
+        "like_multiple": 3.6,
+        "likes": 7020,
+        "likes_as_of": null,
+        "posted_on": "2026-10-25",
+        "url": "https://www.instagram.com/p/SynTechA001/",
+        "usual_likes": 1950
+      },
+      "slug": "sentetik-teknoloji-a",
+      "tier": "macro"
+    }
+  ],
+  "method": {
+    "baseline_days": 120,
+    "metric": "likes_vs_usual_likes",
+    "min_baseline_n": 5,
+    "min_likes": 1000,
+    "min_multiple": 3.0,
+    "one_per_account": true,
+    "pool_only": true,
+    "version": "px11-highlights-v1"
+  }
+}

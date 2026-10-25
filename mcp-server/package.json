@@ -1,0 +1,19 @@
+{
+  "name": "hypenomia-mcp-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only MCP server over Hypenomia's public open-sample snapshot. No database, no API, no provider access.",
+  "license": "MIT",
+  "engines": { "node": ">=24" },
+  "bin": { "hypenomia-mcp": "src/stdio.mjs" },
+  "scripts": {
+    "start": "node src/http.mjs",
+    "stdio": "node src/stdio.mjs",
+    "test": "node --test \"test/*.test.mjs\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "zod": "4.6.6"
+  }
+}

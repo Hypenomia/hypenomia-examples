@@ -1,0 +1,146 @@
+{
+  "data_as_of": {
+    "newest": "2026-10-25",
+    "oldest": "2026-10-15"
+  },
+  "edition": "2026-10-26",
+  "enums": {
+    "category": [
+      "beauty",
+      "food_drink",
+      "lifestyle",
+      "travel",
+      "tech_business_education"
+    ],
+    "tier": [
+      "micro",
+      "macro",
+      "mega"
+    ]
+  },
+  "files": [
+    {
+      "bytes": 13000,
+      "count": 10,
+      "name": "creators",
+      "sha256": "f034a25a46f6717203c83d6fae672aca86a6217aa5c65f37489750d295cae607",
+      "status": "published"
+    },
+    {
+      "bytes": 46363,
+      "count": 90,
+      "name": "pairs",
+      "sha256": "3589d3f5c230b76b041353737362fb4bc01b21e9c0a8144a9a8a9598058bbcb4",
+      "status": "published"
+    },
+    {
+      "bytes": 30553,
+      "count": 105,
+      "name": "benchmark",
+      "sha256": "5270d34e9fe99369538ebee2a328da4684e63d88bc8b780e947617d9bbff7b9a",
+      "status": "published"
+    },
+    {
+      "bytes": 2845,
+      "count": 3,
+      "name": "weekly",
+      "sha256": "0a04def617c6635d6c01168f08a4994269ee4be0e6610f259d485016a2ce2e92",
+      "status": "published"
+    },
+    {
+      "bytes": 2244,
+      "count": 3,
+      "name": "content",
+      "sha256": "c6aa93ab60d403c48fbf59b73c099a802b47de2509530c9cab578a709dac4773",
+      "status": "published"
+    },
+    {
+      "bytes": 560,
+      "count": 0,
+      "name": "insights",
+      "sha256": "16f7e472c1dca747c6acd20fcacc287a2690a69e137d0cfb4302127d2c9a8ba7",
+      "status": "in_preparation"
+    }
+  ],
+  "generated_at": "2026-10-26T06:00:00Z",
+  "generator": {
+    "commit": "fixture",
+    "mode": "fixture",
+    "script": "scripts/public_snapshot/export.py"
+  },
+  "method_versions": {
+    "benchmark": "px11-benchmark-v1",
+    "compare": "px11-compare-v1",
+    "highlights": "px11-highlights-v1",
+    "summary": "px11-account-summary-v1"
+  },
+  "pool_size": 10,
+  "removal_contact": "support@hypenomia.com",
+  "revision": 1,
+  "samples": [
+    {
+      "category": "beauty",
+      "handle": "synthetic_beauty_a",
+      "slug": "sentetik-guzellik-a",
+      "tier": "micro"
+    },
+    {
+      "category": "beauty",
+      "handle": "synthetic_beauty_b",
+      "slug": "sentetik-guzellik-b",
+      "tier": "micro"
+    },
+    {
+      "category": "beauty",
+      "handle": "synthetic_beauty_c",
+      "slug": "sentetik-guzellik-c",
+      "tier": "micro"
+    },
+    {
+      "category": "beauty",
+      "handle": "synthetic_beauty_d",
+      "slug": "sentetik-guzellik-d",
+      "tier": "micro"
+    },
+    {
+      "category": "beauty",
+      "handle": "synthetic_beauty_e",
+      "slug": "sentetik-guzellik-e",
+      "tier": "macro"
+    },
+    {
+      "category": "travel",
+      "handle": "synthetic_travel_a",
+      "slug": "sentetik-seyahat-a",
+      "tier": "mega"
+    },
+    {
+      "category": "tech_business_education",
+      "handle": "synthetic_tech_a",
+      "slug": "sentetik-teknoloji-a",
+      "tier": "macro"
+    },
+    {
+      "category": "lifestyle",
+      "handle": "synthetic_life_a",
+      "slug": "sentetik-yasam-a",
+      "tier": "micro"
+    },
+    {
+      "category": "food_drink",
+      "handle": "synthetic_food_a",
+      "slug": "sentetik-yemek-a",
+      "tier": "micro"
+    },
+    {
+      "category": "food_drink",
+      "handle": "synthetic_food_b",
+      "slug": "sentetik-yemek-b",
+      "tier": "macro"
+    }
+  ],
+  "schema_version": "px11-public-edition-v1",
+  "serve_until": "2026-11-09",
+  "snapshot_id": "2026-10-26.r1",
+  "synthetic": true
+}

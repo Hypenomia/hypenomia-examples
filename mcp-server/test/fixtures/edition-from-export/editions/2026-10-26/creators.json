@@ -1,0 +1,507 @@
+{
+  "creators": [
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "display_name": "Sentetik Güzellik A",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "items_90d": 41,
+        "missing_reason": null,
+        "rate": 3.1234,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "missing_reason": null,
+        "rounded": 48000,
+        "unit": 1000
+      },
+      "handle": "synthetic_beauty_a",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "beauty",
+        "items_90d": 41,
+        "template": "pool-reason-v1",
+        "tier": "micro",
+        "turkey_basis": [
+          "profile_location",
+          "turkish_content"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": "high",
+        "coverage": 0.92,
+        "display": 74,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": null,
+        "stale": false,
+        "state": "scored"
+      },
+      "slug": "sentetik-guzellik-a",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K",
+      "turkey_basis": [
+        "profile_location",
+        "turkish_content"
+      ]
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "display_name": "Sentetik Güzellik B",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "items_90d": 28,
+        "missing_reason": null,
+        "rate": 4.05,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "missing_reason": null,
+        "rounded": 23000,
+        "unit": 1000
+      },
+      "handle": "synthetic_beauty_b",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "beauty",
+        "items_90d": 28,
+        "template": "pool-reason-v1",
+        "tier": "micro",
+        "turkey_basis": [
+          "turkish_content"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": "high",
+        "coverage": 0.88,
+        "display": 69,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": null,
+        "stale": false,
+        "state": "scored"
+      },
+      "slug": "sentetik-guzellik-b",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K",
+      "turkey_basis": [
+        "turkish_content"
+      ]
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "display_name": "Sentetik Güzellik C",
+      "engagement": {
+        "as_of": "2026-10-24",
+        "items_90d": 35,
+        "missing_reason": null,
+        "rate": 2.21,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-24",
+        "missing_reason": null,
+        "rounded": 81000,
+        "unit": 1000
+      },
+      "handle": "synthetic_beauty_c",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "beauty",
+        "items_90d": 35,
+        "template": "pool-reason-v1",
+        "tier": "micro",
+        "turkey_basis": [
+          "profile_location"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": "medium",
+        "coverage": 0.9,
+        "display": 71,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": null,
+        "stale": false,
+        "state": "scored"
+      },
+      "slug": "sentetik-guzellik-c",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K",
+      "turkey_basis": [
+        "profile_location"
+      ]
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "display_name": "Sentetik Güzellik D",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "items_90d": 19,
+        "missing_reason": null,
+        "rate": 5.6,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "missing_reason": null,
+        "rounded": 12000,
+        "unit": 1000
+      },
+      "handle": "synthetic_beauty_d",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "beauty",
+        "items_90d": 19,
+        "template": "pool-reason-v1",
+        "tier": "micro",
+        "turkey_basis": [
+          "turkish_content"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": "medium",
+        "coverage": 0.81,
+        "display": 63,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": null,
+        "stale": false,
+        "state": "scored"
+      },
+      "slug": "sentetik-guzellik-d",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K",
+      "turkey_basis": [
+        "turkish_content"
+      ]
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "display_name": "Sentetik Güzellik E",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "items_90d": 52,
+        "missing_reason": null,
+        "rate": 1.18,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "missing_reason": null,
+        "rounded": 410000,
+        "unit": 10000
+      },
+      "handle": "synthetic_beauty_e",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "beauty",
+        "items_90d": 52,
+        "template": "pool-reason-v1",
+        "tier": "macro",
+        "turkey_basis": [
+          "profile_location",
+          "turkish_content"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": "high",
+        "coverage": 0.95,
+        "display": 77,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": null,
+        "stale": false,
+        "state": "scored"
+      },
+      "slug": "sentetik-guzellik-e",
+      "tier": "macro",
+      "tier_label": "Macro · 100K–1M",
+      "turkey_basis": [
+        "profile_location",
+        "turkish_content"
+      ]
+    },
+    {
+      "category": "travel",
+      "category_label": "Travel",
+      "display_name": "Sentetik Seyahat A",
+      "engagement": {
+        "as_of": "2026-10-15",
+        "items_90d": 60,
+        "missing_reason": null,
+        "rate": 0.86,
+        "stale": true,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-15",
+        "missing_reason": null,
+        "rounded": 1400000,
+        "unit": 100000
+      },
+      "handle": "synthetic_travel_a",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "travel",
+        "items_90d": 60,
+        "template": "pool-reason-v1",
+        "tier": "mega",
+        "turkey_basis": [
+          "profile_location",
+          "turkish_content"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": "high",
+        "coverage": 0.96,
+        "display": 81,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": null,
+        "stale": false,
+        "state": "scored"
+      },
+      "slug": "sentetik-seyahat-a",
+      "tier": "mega",
+      "tier_label": "Mega · 1M+",
+      "turkey_basis": [
+        "profile_location",
+        "turkish_content"
+      ]
+    },
+    {
+      "category": "tech_business_education",
+      "category_label": "Tech, business & education",
+      "display_name": "Sentetik Teknoloji A",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "items_90d": 30,
+        "missing_reason": null,
+        "rate": 2.43,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": null,
+        "missing_reason": "measurement_date_unknown",
+        "rounded": 130000,
+        "unit": 10000
+      },
+      "handle": "synthetic_tech_a",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "tech_business_education",
+        "items_90d": 30,
+        "template": "pool-reason-v1",
+        "tier": "macro",
+        "turkey_basis": [
+          "turkish_content"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": "medium",
+        "coverage": 0.85,
+        "display": 66,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": null,
+        "stale": false,
+        "state": "scored"
+      },
+      "slug": "sentetik-teknoloji-a",
+      "tier": "macro",
+      "tier_label": "Macro · 100K–1M",
+      "turkey_basis": [
+        "turkish_content"
+      ]
+    },
+    {
+      "category": "lifestyle",
+      "category_label": "Lifestyle",
+      "display_name": "Sentetik Yaşam A",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "items_90d": 33,
+        "missing_reason": null,
+        "rate": 2.95,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "missing_reason": null,
+        "rounded": 67000,
+        "unit": 1000
+      },
+      "handle": "synthetic_life_a",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "lifestyle",
+        "items_90d": 33,
+        "template": "pool-reason-v1",
+        "tier": "micro",
+        "turkey_basis": [
+          "turkish_content"
+        ]
+      },
+      "score": {
+        "calculated_at": null,
+        "confidence": null,
+        "coverage": null,
+        "display": null,
+        "formula_version": null,
+        "missing_reason": "pending",
+        "stale": false,
+        "state": "pending"
+      },
+      "slug": "sentetik-yasam-a",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K",
+      "turkey_basis": [
+        "turkish_content"
+      ]
+    },
+    {
+      "category": "food_drink",
+      "category_label": "Food & drink",
+      "display_name": "Sentetik Yemek A",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "items_90d": 22,
+        "missing_reason": null,
+        "rate": 0.0,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "missing_reason": null,
+        "rounded": 56000,
+        "unit": 1000
+      },
+      "handle": "synthetic_food_a",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "food_drink",
+        "items_90d": 22,
+        "template": "pool-reason-v1",
+        "tier": "micro",
+        "turkey_basis": [
+          "turkish_content"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": "low",
+        "coverage": 0.7,
+        "display": 58,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": null,
+        "stale": false,
+        "state": "scored"
+      },
+      "slug": "sentetik-yemek-a",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K",
+      "turkey_basis": [
+        "turkish_content"
+      ]
+    },
+    {
+      "category": "food_drink",
+      "category_label": "Food & drink",
+      "display_name": "Sentetik Yemek B",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "items_90d": 47,
+        "missing_reason": null,
+        "rate": 1.74,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "missing_reason": null,
+        "rounded": 230000,
+        "unit": 10000
+      },
+      "handle": "synthetic_food_b",
+      "platform": "instagram",
+      "pool_reason": {
+        "category": "food_drink",
+        "items_90d": 47,
+        "template": "pool-reason-v1",
+        "tier": "macro",
+        "turkey_basis": [
+          "profile_location"
+        ]
+      },
+      "score": {
+        "calculated_at": "2026-10-25",
+        "confidence": null,
+        "coverage": 0.31,
+        "display": null,
+        "formula_version": "sqs-b5c-1",
+        "missing_reason": "insufficient_coverage",
+        "stale": false,
+        "state": "insufficient_coverage"
+      },
+      "slug": "sentetik-yemek-b",
+      "tier": "macro",
+      "tier_label": "Macro · 100K–1M",
+      "turkey_basis": [
+        "profile_location"
+      ]
+    }
+  ],
+  "header": {
+    "count": 10,
+    "data_as_of": {
+      "newest": "2026-10-25",
+      "oldest": "2026-10-15"
+    },
+    "edition": "2026-10-26",
+    "file": "creators",
+    "method_url": "https://hypenomia.com/en/methods/sqs",
+    "method_version": "px11-account-summary-v1",
+    "missing_reason": null,
+    "period": null,
+    "schema_version": "px11-public-edition-v1",
+    "snapshot_id": "2026-10-26.r1",
+    "source_url": "https://hypenomia.com/data/public/2026-10-26/creators.json",
+    "status": "published"
+  }
+}

@@ -1,0 +1,1462 @@
+{
+  "cells": [
+    {
+      "category": "all",
+      "category_label": "All categories",
+      "cohort": 409,
+      "excluded": {
+        "no_recent_content": 68,
+        "no_snapshot": 9,
+        "stale": 7
+      },
+      "n": 325,
+      "p25": 1.44,
+      "p50": 2.32,
+      "p75": 3.36,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "cohort": 34,
+      "excluded": {
+        "no_recent_content": 3
+      },
+      "n": 31,
+      "p25": 2.19,
+      "p50": 3.27,
+      "p75": 4.05,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "fashion_style",
+      "category_label": "Fashion & style",
+      "cohort": 33,
+      "excluded": {
+        "no_recent_content": 6,
+        "no_snapshot": 2
+      },
+      "n": 25,
+      "p25": 1.26,
+      "p50": 2.52,
+      "p75": 3.95,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "food_drink",
+      "category_label": "Food & drink",
+      "cohort": 34,
+      "excluded": {
+        "no_recent_content": 7,
+        "no_snapshot": 2
+      },
+      "n": 25,
+      "p25": 1.91,
+      "p50": 2.46,
+      "p75": 3.26,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "lifestyle",
+      "category_label": "Lifestyle",
+      "cohort": 31,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 30,
+      "p25": 1.61,
+      "p50": 2.59,
+      "p75": 4.46,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "parenting_family",
+      "category_label": "Parenting & family",
+      "cohort": 30,
+      "excluded": {
+        "no_recent_content": 6,
+        "no_snapshot": 1,
+        "stale": 1
+      },
+      "n": 22,
+      "p25": 1.25,
+      "p50": 1.69,
+      "p75": 3.16,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "music_entertainment",
+      "category_label": "Music & entertainment",
+      "cohort": 37,
+      "excluded": {
+        "no_recent_content": 9,
+        "stale": 3
+      },
+      "n": 25,
+      "p25": 1.27,
+      "p50": 2.25,
+      "p75": 2.79,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "arts_media",
+      "category_label": "Arts & media",
+      "cohort": 32,
+      "excluded": {
+        "no_recent_content": 6,
+        "no_snapshot": 1
+      },
+      "n": 25,
+      "p25": 1.47,
+      "p50": 2.23,
+      "p75": 3.07,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "travel",
+      "category_label": "Travel",
+      "cohort": 29,
+      "excluded": {
+        "no_recent_content": 7,
+        "no_snapshot": 1
+      },
+      "n": 21,
+      "p25": 1.6,
+      "p50": 1.94,
+      "p75": 3.29,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "tech_business_education",
+      "category_label": "Tech, business & education",
+      "cohort": 33,
+      "excluded": {
+        "no_recent_content": 4
+      },
+      "n": 29,
+      "p25": 1.68,
+      "p50": 2.27,
+      "p75": 3.44,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "sports_outdoors",
+      "category_label": "Sports & outdoors",
+      "cohort": 33,
+      "excluded": {
+        "no_recent_content": 8,
+        "no_snapshot": 1
+      },
+      "n": 24,
+      "p25": 1.32,
+      "p50": 2.33,
+      "p75": 2.85,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "home_living",
+      "category_label": "Home & living",
+      "cohort": 28,
+      "excluded": {
+        "no_recent_content": 6,
+        "stale": 1
+      },
+      "n": 21,
+      "p25": 1.3,
+      "p50": 1.58,
+      "p75": 2.39,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "streetwear_luxury",
+      "category_label": "Streetwear & luxury",
+      "cohort": 23,
+      "excluded": {
+        "no_recent_content": 1,
+        "no_snapshot": 1,
+        "stale": 1
+      },
+      "n": 20,
+      "p25": 1.75,
+      "p50": 2.81,
+      "p75": 3.26,
+      "suppressed": false,
+      "tier": "all"
+    },
+    {
+      "category": "fitness_health",
+      "category_label": "Fitness & health",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "all"
+    },
+    {
+      "category": "shopping_deals",
+      "category_label": "Shopping & deals",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "all"
+    },
+    {
+      "category": "comedy",
+      "category_label": "Comedy",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "all"
+    },
+    {
+      "category": "modest_fashion",
+      "category_label": "Modest fashion",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "all"
+    },
+    {
+      "category": "events_culture",
+      "category_label": "Events & culture",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "all"
+    },
+    {
+      "category": "pets",
+      "category_label": "Pets",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "all"
+    },
+    {
+      "category": "swim_beachwear",
+      "category_label": "Swim & beachwear",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "all"
+    },
+    {
+      "category": "accessories_jewellery",
+      "category_label": "Accessories & jewellery",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "all"
+    },
+    {
+      "category": "all",
+      "category_label": "All categories",
+      "cohort": 92,
+      "excluded": {
+        "no_recent_content": 13,
+        "no_snapshot": 2,
+        "stale": 2
+      },
+      "n": 75,
+      "p25": 3.1,
+      "p50": 4.24,
+      "p75": 5.09,
+      "suppressed": false,
+      "tier": "nano"
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "cohort": 12,
+      "excluded": {},
+      "n": 12,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "fashion_style",
+      "category_label": "Fashion & style",
+      "cohort": 15,
+      "excluded": {
+        "no_recent_content": 3,
+        "no_snapshot": 2
+      },
+      "n": 10,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "food_drink",
+      "category_label": "Food & drink",
+      "cohort": 3,
+      "excluded": {},
+      "n": 3,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "lifestyle",
+      "category_label": "Lifestyle",
+      "cohort": 7,
+      "excluded": {},
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "parenting_family",
+      "category_label": "Parenting & family",
+      "cohort": 4,
+      "excluded": {
+        "no_recent_content": 1,
+        "stale": 1
+      },
+      "n": 2,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "music_entertainment",
+      "category_label": "Music & entertainment",
+      "cohort": 8,
+      "excluded": {
+        "no_recent_content": 3,
+        "stale": 1
+      },
+      "n": 4,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "arts_media",
+      "category_label": "Arts & media",
+      "cohort": 9,
+      "excluded": {
+        "no_recent_content": 2
+      },
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "travel",
+      "category_label": "Travel",
+      "cohort": 3,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 2,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "tech_business_education",
+      "category_label": "Tech, business & education",
+      "cohort": 10,
+      "excluded": {},
+      "n": 10,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "sports_outdoors",
+      "category_label": "Sports & outdoors",
+      "cohort": 8,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "home_living",
+      "category_label": "Home & living",
+      "cohort": 4,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 3,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "streetwear_luxury",
+      "category_label": "Streetwear & luxury",
+      "cohort": 4,
+      "excluded": {},
+      "n": 4,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "fitness_health",
+      "category_label": "Fitness & health",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "shopping_deals",
+      "category_label": "Shopping & deals",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "comedy",
+      "category_label": "Comedy",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "modest_fashion",
+      "category_label": "Modest fashion",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "events_culture",
+      "category_label": "Events & culture",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "pets",
+      "category_label": "Pets",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "swim_beachwear",
+      "category_label": "Swim & beachwear",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "accessories_jewellery",
+      "category_label": "Accessories & jewellery",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "nano"
+    },
+    {
+      "category": "all",
+      "category_label": "All categories",
+      "cohort": 185,
+      "excluded": {
+        "no_recent_content": 35,
+        "no_snapshot": 5,
+        "stale": 4
+      },
+      "n": 141,
+      "p25": 2.15,
+      "p50": 2.78,
+      "p75": 3.27,
+      "suppressed": false,
+      "tier": "micro"
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "cohort": 15,
+      "excluded": {
+        "no_recent_content": 2
+      },
+      "n": 13,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "fashion_style",
+      "category_label": "Fashion & style",
+      "cohort": 9,
+      "excluded": {
+        "no_recent_content": 2
+      },
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "food_drink",
+      "category_label": "Food & drink",
+      "cohort": 23,
+      "excluded": {
+        "no_recent_content": 4,
+        "no_snapshot": 1
+      },
+      "n": 18,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "lifestyle",
+      "category_label": "Lifestyle",
+      "cohort": 13,
+      "excluded": {},
+      "n": 13,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "parenting_family",
+      "category_label": "Parenting & family",
+      "cohort": 16,
+      "excluded": {
+        "no_recent_content": 3,
+        "no_snapshot": 1
+      },
+      "n": 12,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "music_entertainment",
+      "category_label": "Music & entertainment",
+      "cohort": 14,
+      "excluded": {
+        "no_recent_content": 4,
+        "stale": 2
+      },
+      "n": 8,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "arts_media",
+      "category_label": "Arts & media",
+      "cohort": 11,
+      "excluded": {
+        "no_recent_content": 3,
+        "no_snapshot": 1
+      },
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "travel",
+      "category_label": "Travel",
+      "cohort": 15,
+      "excluded": {
+        "no_recent_content": 4
+      },
+      "n": 11,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "tech_business_education",
+      "category_label": "Tech, business & education",
+      "cohort": 14,
+      "excluded": {
+        "no_recent_content": 3
+      },
+      "n": 11,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "sports_outdoors",
+      "category_label": "Sports & outdoors",
+      "cohort": 14,
+      "excluded": {
+        "no_recent_content": 4,
+        "no_snapshot": 1
+      },
+      "n": 9,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "home_living",
+      "category_label": "Home & living",
+      "cohort": 11,
+      "excluded": {
+        "no_recent_content": 3,
+        "stale": 1
+      },
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "streetwear_luxury",
+      "category_label": "Streetwear & luxury",
+      "cohort": 10,
+      "excluded": {
+        "no_snapshot": 1
+      },
+      "n": 9,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "fitness_health",
+      "category_label": "Fitness & health",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "shopping_deals",
+      "category_label": "Shopping & deals",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "comedy",
+      "category_label": "Comedy",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "modest_fashion",
+      "category_label": "Modest fashion",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "events_culture",
+      "category_label": "Events & culture",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "pets",
+      "category_label": "Pets",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "swim_beachwear",
+      "category_label": "Swim & beachwear",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "accessories_jewellery",
+      "category_label": "Accessories & jewellery",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "micro"
+    },
+    {
+      "category": "all",
+      "category_label": "All categories",
+      "cohort": 100,
+      "excluded": {
+        "no_recent_content": 17,
+        "no_snapshot": 1
+      },
+      "n": 82,
+      "p25": 1.18,
+      "p50": 1.59,
+      "p75": 1.96,
+      "suppressed": false,
+      "tier": "macro"
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "cohort": 5,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 4,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "fashion_style",
+      "category_label": "Fashion & style",
+      "cohort": 4,
+      "excluded": {},
+      "n": 4,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "food_drink",
+      "category_label": "Food & drink",
+      "cohort": 6,
+      "excluded": {
+        "no_recent_content": 3
+      },
+      "n": 3,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "lifestyle",
+      "category_label": "Lifestyle",
+      "cohort": 7,
+      "excluded": {},
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "parenting_family",
+      "category_label": "Parenting & family",
+      "cohort": 9,
+      "excluded": {
+        "no_recent_content": 2
+      },
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "music_entertainment",
+      "category_label": "Music & entertainment",
+      "cohort": 10,
+      "excluded": {
+        "no_recent_content": 2
+      },
+      "n": 8,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "arts_media",
+      "category_label": "Arts & media",
+      "cohort": 9,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 8,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "travel",
+      "category_label": "Travel",
+      "cohort": 10,
+      "excluded": {
+        "no_recent_content": 2,
+        "no_snapshot": 1
+      },
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "tech_business_education",
+      "category_label": "Tech, business & education",
+      "cohort": 8,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 7,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "sports_outdoors",
+      "category_label": "Sports & outdoors",
+      "cohort": 8,
+      "excluded": {
+        "no_recent_content": 2
+      },
+      "n": 6,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "home_living",
+      "category_label": "Home & living",
+      "cohort": 12,
+      "excluded": {
+        "no_recent_content": 2
+      },
+      "n": 10,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "streetwear_luxury",
+      "category_label": "Streetwear & luxury",
+      "cohort": 7,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 6,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "fitness_health",
+      "category_label": "Fitness & health",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "shopping_deals",
+      "category_label": "Shopping & deals",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "comedy",
+      "category_label": "Comedy",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "modest_fashion",
+      "category_label": "Modest fashion",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "events_culture",
+      "category_label": "Events & culture",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "pets",
+      "category_label": "Pets",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "swim_beachwear",
+      "category_label": "Swim & beachwear",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "accessories_jewellery",
+      "category_label": "Accessories & jewellery",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "macro"
+    },
+    {
+      "category": "all",
+      "category_label": "All categories",
+      "cohort": 32,
+      "excluded": {
+        "no_recent_content": 3,
+        "no_snapshot": 1,
+        "stale": 1
+      },
+      "n": 27,
+      "p25": 0.55,
+      "p50": 0.85,
+      "p75": 0.99,
+      "suppressed": false,
+      "tier": "mega"
+    },
+    {
+      "category": "beauty",
+      "category_label": "Beauty",
+      "cohort": 2,
+      "excluded": {},
+      "n": 2,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "fashion_style",
+      "category_label": "Fashion & style",
+      "cohort": 5,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 4,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "food_drink",
+      "category_label": "Food & drink",
+      "cohort": 2,
+      "excluded": {
+        "no_snapshot": 1
+      },
+      "n": 1,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "lifestyle",
+      "category_label": "Lifestyle",
+      "cohort": 4,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 3,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "parenting_family",
+      "category_label": "Parenting & family",
+      "cohort": 1,
+      "excluded": {},
+      "n": 1,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "music_entertainment",
+      "category_label": "Music & entertainment",
+      "cohort": 5,
+      "excluded": {},
+      "n": 5,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "arts_media",
+      "category_label": "Arts & media",
+      "cohort": 3,
+      "excluded": {},
+      "n": 3,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "travel",
+      "category_label": "Travel",
+      "cohort": 1,
+      "excluded": {},
+      "n": 1,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "tech_business_education",
+      "category_label": "Tech, business & education",
+      "cohort": 1,
+      "excluded": {},
+      "n": 1,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "sports_outdoors",
+      "category_label": "Sports & outdoors",
+      "cohort": 3,
+      "excluded": {
+        "no_recent_content": 1
+      },
+      "n": 2,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "home_living",
+      "category_label": "Home & living",
+      "cohort": 1,
+      "excluded": {},
+      "n": 1,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "streetwear_luxury",
+      "category_label": "Streetwear & luxury",
+      "cohort": 2,
+      "excluded": {
+        "stale": 1
+      },
+      "n": 1,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "fitness_health",
+      "category_label": "Fitness & health",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "shopping_deals",
+      "category_label": "Shopping & deals",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "comedy",
+      "category_label": "Comedy",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "modest_fashion",
+      "category_label": "Modest fashion",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "events_culture",
+      "category_label": "Events & culture",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "pets",
+      "category_label": "Pets",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "swim_beachwear",
+      "category_label": "Swim & beachwear",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    },
+    {
+      "category": "accessories_jewellery",
+      "category_label": "Accessories & jewellery",
+      "cohort": 0,
+      "excluded": {},
+      "n": 0,
+      "p25": null,
+      "p50": null,
+      "p75": null,
+      "suppressed": true,
+      "tier": "mega"
+    }
+  ],
+  "computed_at": "2026-10-26T06:00:00Z",
+  "header": {
+    "count": 105,
+    "data_as_of": {
+      "newest": "2026-10-25",
+      "oldest": "2026-10-23"
+    },
+    "edition": "2026-10-26",
+    "file": "benchmark",
+    "method_url": "https://hypenomia.com/en/benchmark/instagram",
+    "method_version": "px11-benchmark-v1",
+    "missing_reason": null,
+    "period": null,
+    "schema_version": "px11-public-edition-v1",
+    "snapshot_id": "2026-10-26.r1",
+    "source_url": "https://hypenomia.com/data/public/2026-10-26/benchmark.json",
+    "status": "published"
+  },
+  "method": {
+    "er_methodology_versions": {
+      "2026-08-16-90d-weighted-median": 325
+    },
+    "formula": "(likes + comments) / followers x 100. Weighted median of posts and reels from the last 90 days.",
+    "metric": "engagement_rate",
+    "min_sample": 20,
+    "percentiles": [
+      25,
+      50,
+      75
+    ],
+    "stale_after_days": 7,
+    "tiers": [
+      {
+        "key": "nano",
+        "label": "Nano · <10K",
+        "max_followers": 10000,
+        "min_followers": 0
+      },
+      {
+        "key": "micro",
+        "label": "Micro · 10K–100K",
+        "max_followers": 100000,
+        "min_followers": 10000
+      },
+      {
+        "key": "macro",
+        "label": "Macro · 100K–1M",
+        "max_followers": 1000000,
+        "min_followers": 100000
+      },
+      {
+        "key": "mega",
+        "label": "Mega · 1M+",
+        "max_followers": null,
+        "min_followers": 1000000
+      }
+    ],
+    "unit": "percent",
+    "version": "px11-benchmark-v1",
+    "window_days": 90
+  },
+  "platform": "instagram",
+  "totals": {
+    "active_accounts": 420,
+    "uncategorised": 32,
+    "without_follower_count": 11
+  },
+  "universe": "tracked_set"
+}

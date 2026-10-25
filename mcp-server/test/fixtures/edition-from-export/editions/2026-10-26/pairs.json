@@ -1,0 +1,2042 @@
+{
+  "header": {
+    "count": 90,
+    "data_as_of": {
+      "newest": "2026-10-25",
+      "oldest": "2026-10-15"
+    },
+    "edition": "2026-10-26",
+    "file": "pairs",
+    "method_url": "https://hypenomia.com/en/methods/sqs",
+    "method_version": "px11-compare-v1",
+    "missing_reason": null,
+    "period": null,
+    "schema_version": "px11-public-edition-v1",
+    "snapshot_id": "2026-10-26.r1",
+    "source_url": "https://hypenomia.com/data/public/2026-10-26/pairs.json",
+    "status": "published"
+  },
+  "margins": {
+    "engagement_dates_days": 7,
+    "engagement_relative": 0.15,
+    "score_points": 5
+  },
+  "pairs": [
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "similar",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-yemek-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-a",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-yemek-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-b",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 9,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "similar",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-yemek-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-c",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-yemek-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-d",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-yemek-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-guzellik-e",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 9,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": false,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-yemek-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-seyahat-a",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "similar",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "higher",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-yemek-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-teknoloji-a",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "similar",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": false,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-yemek-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yasam-a",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "similar",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "lower",
+          "reason": null
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-a",
+      "slug_b": "sentetik-yemek-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-guzellik-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-guzellik-b"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 1,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-guzellik-c"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-guzellik-d"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-guzellik-e"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 10,
+        "er_dates_within_limit": false,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups",
+        "engagement_dates_far_apart"
+      ],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-seyahat-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": true
+      },
+      "notes": [],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-teknoloji-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "lower",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": false,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-yasam-a"
+    },
+    {
+      "bands": {
+        "engagement": {
+          "band": "higher",
+          "reason": null
+        },
+        "score": {
+          "band": "not_comparable",
+          "reason": "score_missing"
+        }
+      },
+      "comparable": {
+        "er_dates_gap_days": 0,
+        "er_dates_within_limit": true,
+        "same_formula_version": true,
+        "same_tier": false
+      },
+      "notes": [
+        "different_size_groups"
+      ],
+      "slug_a": "sentetik-yemek-b",
+      "slug_b": "sentetik-yemek-a"
+    }
+  ]
+}

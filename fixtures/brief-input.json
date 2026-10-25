@@ -1,0 +1,55 @@
+{
+ "_synthetic": "Synthetic: invented brand aggregates. Not real brands, creators or campaigns.",
+ "_format": "hypenomia-examples brief input v1. Example format for this folder, not the Hypenomia API.",
+ "platform": "instagram",
+ "period": {"start": "2026-09-14", "end": "2026-10-13", "days": 30},
+ "subject": "Brand A",
+ "brands": [
+  {
+   "label": "Brand A",
+   "verified_posts": 31,
+   "left_out_posts": 64,
+   "creators": 19,
+   "returning_creators": 7,
+   "formats": {"reel": 12, "feed": 7, "story": 12},
+   "reel_plays_measured": 486300,
+   "story_views_estimated": {"mid": 88400, "low": 47100, "high": 151900}
+  },
+  {
+   "label": "Brand B",
+   "verified_posts": 44,
+   "left_out_posts": 52,
+   "creators": 26,
+   "returning_creators": 15,
+   "formats": {"reel": 20, "feed": 9, "story": 15},
+   "reel_plays_measured": 921700,
+   "story_views_estimated": {"mid": 132600, "low": 70400, "high": 221300}
+  },
+  {
+   "label": "Brand C",
+   "verified_posts": 18,
+   "left_out_posts": 29,
+   "creators": 12,
+   "returning_creators": 3,
+   "formats": {"reel": 5, "feed": 4, "story": 9},
+   "reel_plays_measured": 140200,
+   "story_views_estimated": {"mid": 41800, "low": 22900, "high": 70500}
+  },
+  {
+   "label": "Brand D",
+   "verified_posts": 9,
+   "left_out_posts": 40,
+   "creators": 8,
+   "returning_creators": 2,
+   "formats": {"reel": 4, "feed": 5, "story": 0},
+   "reel_plays_measured": 77900,
+   "story_views_estimated": null
+  }
+ ],
+ "shared_creators": [
+  {"a": "Brand A", "b": "Brand B", "creators": 5},
+  {"a": "Brand A", "b": "Brand C", "creators": 2},
+  {"a": "Brand B", "b": "Brand C", "creators": 3},
+  {"a": "Brand A", "b": "Brand D", "creators": 0}
+ ]
+}

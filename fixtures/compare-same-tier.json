@@ -1,0 +1,100 @@
+{
+ "_synthetic": "Synthetic: made by the Hypenomia API builders from invented rows. Not real data.",
+ "_source": "GET /api/v1/public/accounts/instagram/compare",
+ "method_version": "px11-compare-v1",
+ "platform": "instagram",
+ "margins": {
+  "score_points": 5,
+  "engagement_relative": 0.15,
+  "engagement_dates_days": 7
+ },
+ "a": {
+  "method_version": "px11-account-summary-v1",
+  "platform": "instagram",
+  "handle": "example-creator-a",
+  "found": true,
+  "followers": 48200,
+  "tier": "micro",
+  "tier_label": "Micro · 10K–100K",
+  "category": "beauty",
+  "category_label": "Beauty",
+  "score": {
+   "state": "scored",
+   "display": 74,
+   "coverage": 0.92,
+   "confidence": "high",
+   "calculated_at": "2026-10-20T00:00:00",
+   "formula_version": "sqs-b5c-1",
+   "reason": null
+  },
+  "engagement": {
+   "state": "measured",
+   "rate": 3.1,
+   "items_90d": 38,
+   "window_days": 90,
+   "reason": null,
+   "note": null,
+   "as_of": "2026-10-21",
+   "stale": false
+  },
+  "limits": {
+   "quality_not_guarantee": "The quality score describes stored public signals. It is not a guarantee of sales, reach or campaign results.",
+   "no_audience_overlap": "Nothing here says two accounts share the same people; audience overlap is not measured."
+  }
+ },
+ "b": {
+  "method_version": "px11-account-summary-v1",
+  "platform": "instagram",
+  "handle": "example-creator-b",
+  "found": true,
+  "followers": 61500,
+  "tier": "micro",
+  "tier_label": "Micro · 10K–100K",
+  "category": "beauty",
+  "category_label": "Beauty",
+  "score": {
+   "state": "scored",
+   "display": 66,
+   "coverage": 0.78,
+   "confidence": "high",
+   "calculated_at": "2026-10-20T00:00:00",
+   "formula_version": "sqs-b5c-1",
+   "reason": null
+  },
+  "engagement": {
+   "state": "measured",
+   "rate": 2.9,
+   "items_90d": 25,
+   "window_days": 90,
+   "reason": null,
+   "note": null,
+   "as_of": "2026-10-21",
+   "stale": false
+  },
+  "limits": {
+   "quality_not_guarantee": "The quality score describes stored public signals. It is not a guarantee of sales, reach or campaign results.",
+   "no_audience_overlap": "Nothing here says two accounts share the same people; audience overlap is not measured."
+  }
+ },
+ "comparable": {
+  "same_tier": true,
+  "same_formula_version": true,
+  "er_dates_gap_days": 0,
+  "er_dates_within_limit": true
+ },
+ "bands": {
+  "score": {
+   "band": "higher",
+   "reason": null
+  },
+  "engagement": {
+   "band": "similar",
+   "reason": null
+  }
+ },
+ "notes": [],
+ "limits": {
+  "quality_not_guarantee": "The quality score describes stored public signals. It is not a guarantee of sales, reach or campaign results.",
+  "no_audience_overlap": "Nothing here says two accounts share the same people; audience overlap is not measured."
+ }
+}
