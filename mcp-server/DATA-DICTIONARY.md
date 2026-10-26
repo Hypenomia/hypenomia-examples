@@ -13,7 +13,8 @@ Each edition file starts with a `header`; every tool result repeats it as a flat
 | `data_as_of` | `{oldest, newest}` dates of the measurements behind the file (either may be null) |
 | `period` | `{start, end, end_exclusive, tz}` or `null` (these files have none today) |
 | `method_version` | label of the method behind the file |
-| `count` | records in the file |
+| `count` | records in the file (not the number of matches) |
+| `matches` | result records this call returned: search 0 to 3 (capped, never a total beyond the cap), get and compare 1 if found else 0, benchmark 1 if the cell exists else 0 |
 | `source_url`, `method_url` | where the file and the method live |
 | `missing_reason` | `null`, or why data is missing. Never read a missing value as zero |
 | `lang` | tool results only: `en` or `tr` (affects the sample page link) |

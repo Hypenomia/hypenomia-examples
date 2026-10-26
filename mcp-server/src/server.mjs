@@ -21,13 +21,13 @@ const envelopeShape = {
   schema_version: z.string(), snapshot_id: z.string(), edition: z.string(),
   data_as_of: z.object({ oldest: z.string().nullable(), newest: z.string().nullable() }),
   period: z.object({ start: z.string(), end: z.string(), end_exclusive: z.boolean(), tz: z.string() }).nullable(),
-  method_version: z.string(), count: z.number(), source_url: z.string(), method_url: z.string(),
+  method_version: z.string(), count: z.number(), matches: z.number().optional(), source_url: z.string(), method_url: z.string(),
   missing_reason: z.string().nullable(), lang: z.enum(["en", "tr"]), data: z.record(z.string(), z.any()),
 };
 const outputSchema = z.object(envelopeShape);
 const en = (v) => z.enum(v);
 // Slugs are free strings on purpose: a malformed slug must get the same answer as any other unknown one.
-const slug = z.string().max(64).describe("Open-sample slug from search_creator_examples");
+const slug = z.string().max(64).describe("Open-sample slug from search_creator_examples, or its Instagram handle (case-insensitive, with or without @)");
 
 function schemas(enums) {
   const lang = z.enum(["en", "tr"]).default("en").describe("Language of the sample page link");
@@ -46,8 +46,8 @@ function schemas(enums) {
 
 const DEFS = {
   search_creator_examples: ["Search open creator examples", "Up to 3 example creators from the selected open pool, filtered by category and/or tier. Fixed order, no paging; the filter is never widened.", T.searchCreatorExamples],
-  get_creator_example: ["Get one open creator example", "Published summary of one open-pool creator by slug. Unknown slugs return found:false.", T.getCreatorExample],
-  compare_creator_examples: ["Compare two open creator examples", "Published comparison bands for two different open-pool creators (score and engagement). Bands only, no winner.", T.compareCreatorExamples],
+  get_creator_example: ["Get one open creator example", "Published summary of one open-pool creator by slug or Instagram handle (case-insensitive, optional @). Unknown keys return found:false.", T.getCreatorExample],
+  compare_creator_examples: ["Compare two open creator examples", "Published comparison bands for two different open-pool creators, each given as slug or Instagram handle (score and engagement). Bands only, no winner.", T.compareCreatorExamples],
   get_instagram_benchmark: ["Instagram engagement benchmark", "Engagement-rate percentiles (p25/p50/p75) for a follower tier and category cell of the tracked set. Suppressed cells return null values.", T.getInstagramBenchmark],
 };
 
@@ -85,7 +85,7 @@ export function createMcpServer(store, { tools = ALL_TOOLS, maxResponseBytes = M
 // Arguments are logged as public enums/slugs only; an unknown slug (possibly a private handle) is never logged.
 function loggable(snap, args) {
   const out = { ...args };
-  for (const k of ["slug", "slug_a", "slug_b"]) if (k in out && !snap.creators.has(out[k])) out[k] = "<unknown>";
+  for (const k of ["slug", "slug_a", "slug_b"]) if (k in out && !T.resolveCreator(snap, out[k])) out[k] = "<unknown>";
   return out;
 }
 export { SLUG_RE };

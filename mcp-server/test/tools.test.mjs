@@ -12,7 +12,7 @@ before(async () => {
 });
 after(() => conn.close());
 
-const ENVELOPE = ["schema_version", "snapshot_id", "edition", "data_as_of", "period", "method_version", "count", "source_url", "method_url", "missing_reason", "lang", "data"];
+const ENVELOPE = ["schema_version", "snapshot_id", "edition", "data_as_of", "period", "method_version", "count", "matches", "source_url", "method_url", "missing_reason", "lang", "data"];
 const ALLOWED_KEYS = new Set([...ENVELOPE, "oldest", "newest", "start", "end", "end_exclusive", "tz",
   "filter", "category", "tier", "open_pool_size", "order", "results", "slug", "handle", "display_name", "category_label", "tier_label",
   "followers", "rounded", "unit", "as_of", "missing_reason", "engagement", "state", "rate", "window_days", "items_90d", "stale",
@@ -124,6 +124,40 @@ test("no existence oracle: every unknown input yields identical bytes", async ()
   const over = await call(client, "get_creator_example", { slug: "x".repeat(65) });
   assert.equal(over.isError, true);
   assert.ok(!over.content[0].text.includes("xxxxxxxx"), "invalid input is not echoed");
+});
+
+test("get and compare accept a slug or the Instagram handle, with or without @, any case", async () => {
+  const a = snap.creators.get(A), b = snap.creators.get(B);
+  for (const key of [a.handle, a.handle.toUpperCase(), `@${a.handle}`, `@${a.handle.toUpperCase()}`, A]) {
+    const d = (await call(client, "get_creator_example", { slug: key })).structuredContent;
+    assert.equal(d.data.found, true, key);
+    assert.equal(d.data.slug, A);
+    assert.equal(d.matches, 1);
+  }
+  const bySlug = (await call(client, "compare_creator_examples", { slug_a: A, slug_b: B })).structuredContent;
+  const byHandle = (await call(client, "compare_creator_examples", { slug_a: `@${a.handle}`, slug_b: b.handle.toUpperCase() })).structuredContent;
+  assert.deepEqual(byHandle, bySlug);
+  const same = await call(client, "compare_creator_examples", { slug_a: A, slug_b: `@${a.handle}` });
+  assert.equal(same.isError, true, "slug and its own handle are the same creator");
+  assert.equal((await call(client, "get_creator_example", { slug: "@nobody.here" })).structuredContent.data.found, false);
+});
+
+test("a handle with a dot resolves (dots in handles, hyphens in slugs)", async () => {
+  const dotted = { creators: new Map(snap.creators) };
+  dotted.creators.set("av-ipek", { ...snap.creators.get(A), slug: "av-ipek", handle: "av.ipek" });
+  const T = await import("../src/tools.mjs");
+  assert.equal(T.resolveCreator(dotted, "av.ipek").slug, "av-ipek");
+  assert.equal(T.resolveCreator(dotted, "@AV.Ipek").slug, "av-ipek");
+  assert.equal(T.resolveCreator(dotted, "av-ipek").slug, "av-ipek");
+});
+
+test("matches counts returned records; count stays the file count", async () => {
+  const s = (await call(client, "search_creator_examples", { category: "travel" })).structuredContent;
+  assert.equal(s.matches, s.data.results.length);
+  const all = (await call(client, "search_creator_examples", {})).structuredContent;
+  assert.equal(all.matches, 3);
+  assert.ok(all.count >= snap.creators.size, "count is the file's record count");
+  assert.equal((await call(client, "get_creator_example", { slug: "nope-x" })).structuredContent.matches, 0);
 });
 
 test("compare: identical slugs rejected; both directions are published and looked up exactly, never flipped", async () => {

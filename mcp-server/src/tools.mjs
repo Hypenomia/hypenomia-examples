@@ -31,7 +31,23 @@ function poolOrder(a, b) {
 
 // A file that is not published yet: no content, the file's own reason.
 function preparing(file) {
-  return { file, missing_reason: file.header.missing_reason ?? "in_preparation", outcome: "in_preparation", data: { found: false, status: file.header.status } };
+  return { file, missing_reason: file.header.missing_reason ?? "in_preparation", outcome: "in_preparation", matches: 0, data: { found: false, status: file.header.status } };
+}
+
+// A creator key is the slug (exact) or the Instagram handle (case-insensitive, optional leading @).
+// Handles of published samples are public in the same files; an unknown key still gets the one fixed answer.
+const handleIndex = new WeakMap();
+export function resolveCreator(snap, key) {
+  if (typeof key !== "string") return undefined;
+  const bySlug = snap.creators.get(key);
+  if (bySlug) return bySlug;
+  let idx = handleIndex.get(snap);
+  if (!idx) {
+    idx = new Map();
+    for (const c of snap.creators.values()) if (typeof c.handle === "string") idx.set(c.handle.toLowerCase(), c);
+    handleIndex.set(snap, idx);
+  }
+  return idx.get(key.startsWith("@") ? key.slice(1).toLowerCase() : key.toLowerCase());
 }
 
 export function searchCreatorExamples(snap, { category, tier, lang }) {
@@ -45,6 +61,7 @@ export function searchCreatorExamples(snap, { category, tier, lang }) {
     file,
     missing_reason: few ? "few_open_samples" : null,
     outcome: few ? "few" : "ok",
+    matches: results.length,
     data: {
       filter: { category: category ?? null, tier: tier ?? null },
       open_pool_size: all.length,
@@ -55,9 +72,10 @@ export function searchCreatorExamples(snap, { category, tier, lang }) {
 }
 
 export function getCreatorExample(snap, { slug, lang }) {
-  const c = snap.creators.get(slug);
+  const c = resolveCreator(snap, slug);
   if (!c) return notInPool(snap.files.creators);
   return {
+    matches: 1,
     file: snap.files.creators,
     missing_reason: c.engagement.rate === null ? (c.engagement.missing_reason ?? "not_measured") : null,
     outcome: "ok",
@@ -67,22 +85,24 @@ export function getCreatorExample(snap, { slug, lang }) {
 
 function notInPool(file) {
   // Fixed body: nothing from the request is echoed, so every unknown input yields the same bytes.
-  return { file, missing_reason: NOT_IN_POOL, outcome: "not_found", data: { found: false } };
+  return { file, missing_reason: NOT_IN_POOL, outcome: "not_found", matches: 0, data: { found: false } };
 }
 
 export function compareCreatorExamples(snap, { slug_a, slug_b, lang }) {
   if (slug_a === slug_b) throw new McpError(ErrorCode.InvalidParams, "slug_a and slug_b must differ");
   const file = snap.files.pairs;
-  const a = snap.creators.get(slug_a), b = snap.creators.get(slug_b);
+  const a = resolveCreator(snap, slug_a), b = resolveCreator(snap, slug_b);
   if (!a || !b) return notInPool(file);
+  if (a.slug === b.slug) throw new McpError(ErrorCode.InvalidParams, "slug_a and slug_b must differ");
   if (file.header.status !== "published") return preparing(file);
   // Both orders are published; bands read as "slug_a against slug_b". Never flipped here.
-  const pair = snap.pairs.get(`${slug_a}|${slug_b}`);
-  if (!pair) return { file, missing_reason: "pair_not_published", outcome: "not_found", data: { found: false } };
+  const pair = snap.pairs.get(`${a.slug}|${b.slug}`);
+  if (!pair) return { file, missing_reason: "pair_not_published", outcome: "not_found", matches: 0, data: { found: false } };
   return {
     file,
     missing_reason: null,
     outcome: "ok",
+    matches: 1,
     data: {
       found: true,
       a: creatorCard(a, lang),
@@ -104,12 +124,13 @@ export function getInstagramBenchmark(snap, { tier = "all", category = "all" }) 
     window_days: m.window_days, min_sample: m.min_sample, stale_after_days: m.stale_after_days,
   };
   const cell = snap.cells.get(`${tier}|${category}`);
-  if (!cell) return { file: bench, missing_reason: "no_such_cell", outcome: "not_found", data: { found: false, ...common } };
+  if (!cell) return { file: bench, missing_reason: "no_such_cell", outcome: "not_found", matches: 0, data: { found: false, ...common } };
   const tierLabel = m.tiers.find((t) => t.key === tier)?.label ?? null;
   return {
     file: bench,
     missing_reason: cell.suppressed ? "below_min_sample" : null,
     outcome: cell.suppressed ? "suppressed" : "ok",
+    matches: 1,
     data: {
       found: true,
       ...common,
@@ -132,6 +153,7 @@ export function envelope(snap, file, lang, r) {
     period: h.period,
     method_version: h.method_version,
     count: h.count,
+    matches: r.matches ?? 0,
     source_url: h.source_url,
     method_url: h.method_url,
     missing_reason: r.missing_reason,

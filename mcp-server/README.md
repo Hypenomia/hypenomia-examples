@@ -28,13 +28,13 @@ All tools are `readOnlyHint`, `idempotentHint`, not `openWorldHint`; inputs reje
 | Tool | Input | Returns |
 |---|---|---|
 | `search_creator_examples` | optional `category`, `tier`, `lang` (`en`/`tr`) | at most 3 open samples, fixed order (followers desc, then slug), never widened. Fewer than 3 matches sets `missing_reason: few_open_samples` |
-| `get_creator_example` | `slug`, `lang` | published summary of one open sample; any unknown slug returns the same bytes (`found:false`, `not_in_open_pool`) |
-| `compare_creator_examples` | `slug_a`, `slug_b` (different), `lang` | the published pair for exactly (`slug_a`, `slug_b`): score and engagement bands read "a against b", comparable flags, notes. Both orders are published; nothing is flipped. No winner |
+| `get_creator_example` | `slug` (or the Instagram handle, case-insensitive, with or without `@`), `lang` | published summary of one open sample; any unknown key returns the same bytes (`found:false`, `not_in_open_pool`) |
+| `compare_creator_examples` | `slug_a`, `slug_b` (different creators; slug or handle), `lang` | the published pair for exactly (`slug_a`, `slug_b`): score and engagement bands read "a against b", comparable flags, notes. Both orders are published; nothing is flipped. No winner |
 | `get_instagram_benchmark` | `tier` or `all`, `category` or `all` | one cell: cohort, n, excluded counts, p25/p50/p75. Suppressed cells give `null` and `below_min_sample`, never 0 |
 
 Sector briefs, weekly highlights, content examples, list pages and brand pages are not tools (the bundled edition also carries `lists.json` and `brands.json`, which the server does not read): the public schema has no per-sector data and the weekly and content files are never read (`MCP_TOOLS` controls which tools are exposed).
 
-Every result is `structuredContent = {schema_version, snapshot_id, edition, data_as_of:{oldest,newest}, period (object or null), method_version, count, source_url, method_url, missing_reason, lang, data}` (taken from the file `header`) plus one Markdown `text` block. Field meanings: [DATA-DICTIONARY.md](DATA-DICTIONARY.md).
+Every result is `structuredContent = {schema_version, snapshot_id, edition, data_as_of:{oldest,newest}, period (object or null), method_version, count, matches, source_url, method_url, missing_reason, lang, data}` (taken from the file `header`) plus one Markdown `text` block. Field meanings: [DATA-DICTIONARY.md](DATA-DICTIONARY.md).
 
 Invalid input (unknown enum, extra argument, bad edition string) comes back as a tool error whose text starts with `MCP error -32602` (SDK 1.32 reports validation errors this way).
 
