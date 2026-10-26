@@ -20,59 +20,59 @@
   },
   "files": [
     {
-      "bytes": 13000,
+      "bytes": 12944,
       "count": 10,
       "name": "creators",
-      "sha256": "f034a25a46f6717203c83d6fae672aca86a6217aa5c65f37489750d295cae607",
+      "sha256": "66dc4a2ebb11284cb872e859e77b004c370ae4ba5f125c073f231a16fa15da5f",
       "status": "published"
     },
     {
-      "bytes": 46363,
+      "bytes": 46310,
       "count": 90,
       "name": "pairs",
-      "sha256": "3589d3f5c230b76b041353737362fb4bc01b21e9c0a8144a9a8a9598058bbcb4",
+      "sha256": "115f492af59db66aff073702595493c7f18ed9d5470fa9dd0c727e1db87be610",
       "status": "published"
     },
     {
-      "bytes": 30553,
+      "bytes": 30495,
       "count": 105,
       "name": "benchmark",
-      "sha256": "5270d34e9fe99369538ebee2a328da4684e63d88bc8b780e947617d9bbff7b9a",
+      "sha256": "6e60cf9409ac33438d019559b834beb76a83fe9c0aee7eb3a9a36af3345533d4",
       "status": "published"
     },
     {
-      "bytes": 2845,
+      "bytes": 2791,
       "count": 3,
       "name": "weekly",
-      "sha256": "0a04def617c6635d6c01168f08a4994269ee4be0e6610f259d485016a2ce2e92",
+      "sha256": "d0010be653345612f004dc00178a3d6931cbd6f033988c8b0f702cb208e4a5a6",
       "status": "published"
     },
     {
-      "bytes": 2244,
+      "bytes": 2189,
       "count": 3,
       "name": "content",
-      "sha256": "c6aa93ab60d403c48fbf59b73c099a802b47de2509530c9cab578a709dac4773",
+      "sha256": "0b768f7614ba4691b6fff83402f48d7d3733fa23669cf35255f12b6dbf4844cb",
       "status": "published"
     },
     {
-      "bytes": 560,
+      "bytes": 503,
       "count": 0,
       "name": "insights",
-      "sha256": "16f7e472c1dca747c6acd20fcacc287a2690a69e137d0cfb4302127d2c9a8ba7",
+      "sha256": "8a16f71072a335e21b11e84ba7a11977c00d995497988a7a2eb1b3d94f0b2666",
       "status": "in_preparation"
     },
     {
-      "bytes": 7787,
+      "bytes": 7734,
       "count": 2,
       "name": "lists",
-      "sha256": "b236c6847f2627c957086a6b41564642cfc78a9d0c7fdaeeee07f65821b7ff3d",
+      "sha256": "e3b7152551c6ad3f8bd62f9633113193b09f3a320ca37bcfc635e3b12b6cc3ee",
       "status": "published"
     },
     {
-      "bytes": 4017,
+      "bytes": 3963,
       "count": 2,
       "name": "brands",
-      "sha256": "99f083ed911eb5d5a634fd8048fbc9f4290ad038517b7161b9317af52dc6e1e4",
+      "sha256": "884c48b86f376444ad26643d88a00b9af475cca805508b9bfcbdd8dedb9dfe89",
       "status": "published"
     }
   ],

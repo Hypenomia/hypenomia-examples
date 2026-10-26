@@ -101,4 +101,4 @@ and an unknown name returns `Not found.` with `Missing: not_in_open_pool`, never
 
 ## Licence and security
 
-Code: MIT, see [LICENSE](LICENSE). The licence covers code only; reuse terms for Hypenomia data are separate and not published yet. Report security issues to support@hypenomia.com, see [SECURITY.md](SECURITY.md).
+Code: MIT, see [LICENSE](LICENSE). The licence covers code only; reuse terms for Hypenomia data are separate, see [DATA-TERMS.md](DATA-TERMS.md) (draft). Report security issues to support@hypenomia.com, see [SECURITY.md](SECURITY.md).

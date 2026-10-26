@@ -9,13 +9,13 @@
     },
     "edition": "2026-10-26",
     "file": "insights",
-    "method_url": "https://hypenomia.com/en/benchmark/instagram",
+    "method_url": "https://hypenomia.com/en/methods/engagement",
     "method_version": "px11-benchmark-v1",
     "missing_reason": "in_preparation",
     "period": null,
     "schema_version": "px11-public-edition-v1",
     "snapshot_id": "2026-10-26.r1",
-    "source_url": "https://hypenomia.com/data/public/2026-10-26/insights.json",
+    "source_url": null,
     "status": "in_preparation"
   }
 }

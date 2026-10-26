@@ -180,7 +180,7 @@ const kfmt = (f) => (f.rounded === null ? "n/a" : `~${f.rounded}`);
 export function toMarkdown(env) {
   const d = env.data;
   const head = `Snapshot ${env.snapshot_id} · data as of ${asOf(env.data_as_of)} · method ${env.method_version}`;
-  const foot = `Source: ${env.source_url} · Method: ${env.method_url}` + (env.missing_reason ? `\nMissing: ${env.missing_reason}` : "");
+  const foot = `Source: ${env.source_url ?? "not yet published"} · Method: ${env.method_url}` + (env.missing_reason ? `\nMissing: ${env.missing_reason}` : "");
   let body;
   if (d.results) {
     body = [`Open samples matching the filter (${d.results.length} of at most ${MAX_RESULTS}; pool ${d.open_pool_size}):`,

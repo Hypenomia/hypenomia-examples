@@ -61,4 +61,4 @@ Logs (stderr, one JSON line per request) hold tool, public arguments, outcome (`
 
 ## Licence and data terms
 
-The code is MIT-licensed ([LICENSE](../LICENSE)). The licence covers code only. Reuse of the data is governed by separate data-use terms that are not written yet. See [SECURITY.md](../SECURITY.md) to report a problem.
+The code is MIT-licensed ([LICENSE](../LICENSE)). The licence covers code only. Reuse of the data is governed by separate data terms, see [DATA-TERMS.md](../DATA-TERMS.md) (draft). See [SECURITY.md](../SECURITY.md) to report a problem.

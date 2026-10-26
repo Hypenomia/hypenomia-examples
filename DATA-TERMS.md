@@ -1,0 +1,25 @@
+# Data terms (DRAFT)
+
+> **OWNER REVIEW REQUIRED. This is a draft and is not legal advice. It must be read and approved by the owner (and, if wanted, a lawyer) before the repository is made public.**
+
+## What the MIT licence covers
+
+The [MIT licence](LICENSE) in this repository covers the **code only**: the workflows, the MCP server, the tests and the documentation text.
+
+It does **not** cover Hypenomia data. The sample files in this repository (`fixtures/`, `mcp-server/test/fixtures/`) are **synthetic test data**. They are not real measurements, are not published Hypenomia data, and carry `"source_url": null` because no real file is published at that address.
+
+## Published Hypenomia data
+
+Hypenomia may in future publish open data editions (for example creator samples and engagement benchmarks) on hypenomia.com. That data does not exist yet. When it does, it is governed by these terms, not by MIT:
+
+1. **Attribution.** If you use or show the data, credit "Hypenomia (hypenomia.com)" and state the edition's **data date** (`data_as_of`, oldest and newest measurement dates) and the method version.
+2. **No resale or bulk redistribution.** You may not sell the data, repackage it as a competing dataset, or republish it in bulk (whole files, whole pools or large extracts). Quoting individual values with attribution is fine.
+3. **Data date.** Values are measurements as of the stated data date. They are not live figures and not a guarantee of future results, sales or reach. Do not present old values as current.
+4. **No invented values.** Where a value is missing, suppressed or "in preparation", it must stay missing in anything you build. Do not fill gaps with estimates presented as Hypenomia data.
+5. **Expiry and removal.** Each edition is served only until its `serve_until` date. Editions may be revised or withdrawn; stop using withdrawn data when notified or when it is no longer listed.
+6. **Removal requests.** A person or brand shown in the data can ask for removal at **support@hypenomia.com**. We will act on such requests and the entry will not appear in later editions.
+7. **No warranty.** Data is provided "as is", without warranty of any kind.
+
+## Contact
+
+support@hypenomia.com

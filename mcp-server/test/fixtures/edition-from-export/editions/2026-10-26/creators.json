@@ -501,7 +501,7 @@
     "period": null,
     "schema_version": "px11-public-edition-v1",
     "snapshot_id": "2026-10-26.r1",
-    "source_url": "https://hypenomia.com/data/public/2026-10-26/creators.json",
+    "source_url": null,
     "status": "published"
   }
 }
