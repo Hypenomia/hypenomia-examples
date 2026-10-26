@@ -26,4 +26,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Scan for secrets
-        run: docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:v8.21.2 detect --source /repo --no-banner --redact
+        run: docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:v8.21.2 detect --source /repo --log-opts="--all" --no-banner --redact

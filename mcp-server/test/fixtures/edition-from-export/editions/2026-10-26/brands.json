@@ -1,0 +1,180 @@
+{
+  "brands": [
+    {
+      "contents": 24,
+      "creators": 7,
+      "evidence": "link_and_verified_tag",
+      "formats": {
+        "post": 4,
+        "reel": 8,
+        "story": 12
+      },
+      "locked": {
+        "competitor_comparison": true,
+        "disclosure_rate": true,
+        "more_creators": true,
+        "story_estimate": true
+      },
+      "name": "Sentetik Marka A",
+      "slug": "sentetik-marka-a",
+      "top": [
+        {
+          "contents": 6,
+          "display_name": "Sentetik Güzellik E",
+          "handle": "synthetic_beauty_e",
+          "open": true,
+          "rank": 1,
+          "slug": "sentetik-guzellik-e"
+        },
+        {
+          "contents": null,
+          "display_name": null,
+          "handle": null,
+          "open": false,
+          "rank": 2,
+          "slug": null
+        },
+        {
+          "contents": 3,
+          "display_name": "Sentetik Güzellik A",
+          "handle": "synthetic_beauty_a",
+          "open": true,
+          "rank": 3,
+          "slug": "sentetik-guzellik-a"
+        }
+      ],
+      "trend": [
+        {
+          "contents": 9,
+          "month": "2026-04"
+        },
+        {
+          "contents": 12,
+          "month": "2026-05"
+        },
+        {
+          "contents": 15,
+          "month": "2026-06"
+        },
+        {
+          "contents": 14,
+          "month": "2026-07"
+        },
+        {
+          "contents": 19,
+          "month": "2026-08"
+        },
+        {
+          "contents": 22,
+          "month": "2026-09"
+        }
+      ]
+    },
+    {
+      "contents": 11,
+      "creators": 3,
+      "evidence": "link_only",
+      "formats": {
+        "post": 2,
+        "reel": 4,
+        "story": 5
+      },
+      "locked": {
+        "competitor_comparison": true,
+        "disclosure_rate": true,
+        "more_creators": false,
+        "story_estimate": true
+      },
+      "name": "Sentetik Marka B",
+      "slug": "sentetik-marka-b",
+      "top": [
+        {
+          "contents": 5,
+          "display_name": "Sentetik Yemek B",
+          "handle": "synthetic_food_b",
+          "open": true,
+          "rank": 1,
+          "slug": "sentetik-yemek-b"
+        },
+        {
+          "contents": 4,
+          "display_name": "Sentetik Seyahat A",
+          "handle": "synthetic_travel_a",
+          "open": true,
+          "rank": 2,
+          "slug": "sentetik-seyahat-a"
+        },
+        {
+          "contents": 2,
+          "display_name": "Sentetik Yaşam A",
+          "handle": "synthetic_life_a",
+          "open": true,
+          "rank": 3,
+          "slug": "sentetik-yasam-a"
+        }
+      ],
+      "trend": [
+        {
+          "contents": 3,
+          "month": "2026-04"
+        },
+        {
+          "contents": 4,
+          "month": "2026-05"
+        },
+        {
+          "contents": 0,
+          "month": "2026-06"
+        },
+        {
+          "contents": 6,
+          "month": "2026-07"
+        },
+        {
+          "contents": 8,
+          "month": "2026-08"
+        },
+        {
+          "contents": 10,
+          "month": "2026-09"
+        }
+      ]
+    }
+  ],
+  "header": {
+    "count": 2,
+    "data_as_of": {
+      "newest": "2026-10-25",
+      "oldest": "2026-10-25"
+    },
+    "edition": "2026-10-26",
+    "file": "brands",
+    "method_url": "https://hypenomia.com/en/methods/unique-content",
+    "method_version": "px11-teaser-v1",
+    "missing_reason": null,
+    "period": {
+      "end": "2026-10-26",
+      "end_exclusive": true,
+      "start": "2026-09-26",
+      "tz": "Europe/Istanbul"
+    },
+    "schema_version": "px11-public-edition-v1",
+    "snapshot_id": "2026-10-26.r1",
+    "source_url": "https://hypenomia.com/data/public/2026-10-26/brands.json",
+    "status": "published"
+  },
+  "method": {
+    "content_types": [
+      "story",
+      "post",
+      "reel"
+    ],
+    "distinct_contents": true,
+    "min_contents": 10,
+    "min_creators": 3,
+    "top_pool_only": true,
+    "trend_months": 6,
+    "version": "px11-teaser-v1",
+    "window_days": 30
+  }
+}

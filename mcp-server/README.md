@@ -12,8 +12,9 @@ Node 24.
 
 ```sh
 cd mcp-server
-npm install
+npm ci
 npm test                 # contract, filter sweep, no-oracle, HTTP and stdio tests
+export MCP_ALLOW_SYNTHETIC=1 MCP_DATA_SOURCE=test/fixtures/edition-from-export   # bundled edition is synthetic
 npm run stdio            # stdio server (for local clients)
 npm start                # stateless HTTP on 127.0.0.1:8080, POST /mcp
 ```
@@ -31,7 +32,7 @@ All tools are `readOnlyHint`, `idempotentHint`, not `openWorldHint`; inputs reje
 | `compare_creator_examples` | `slug_a`, `slug_b` (different), `lang` | the published pair for exactly (`slug_a`, `slug_b`): score and engagement bands read "a against b", comparable flags, notes. Both orders are published; nothing is flipped. No winner |
 | `get_instagram_benchmark` | `tier` or `all`, `category` or `all` | one cell: cohort, n, excluded counts, p25/p50/p75. Suppressed cells give `null` and `below_min_sample`, never 0 |
 
-Sector briefs, weekly highlights and content examples are not tools: the public schema has no per-sector data and the weekly and content files are never read (`MCP_TOOLS` controls which tools are exposed).
+Sector briefs, weekly highlights, content examples, list pages and brand pages are not tools (the bundled edition also carries `lists.json` and `brands.json`, which the server does not read): the public schema has no per-sector data and the weekly and content files are never read (`MCP_TOOLS` controls which tools are exposed).
 
 Every result is `structuredContent = {schema_version, snapshot_id, edition, data_as_of:{oldest,newest}, period (object or null), method_version, count, source_url, method_url, missing_reason, lang, data}` (taken from the file `header`) plus one Markdown `text` block. Field meanings: [DATA-DICTIONARY.md](DATA-DICTIONARY.md).
 

@@ -60,6 +60,20 @@
       "name": "insights",
       "sha256": "16f7e472c1dca747c6acd20fcacc287a2690a69e137d0cfb4302127d2c9a8ba7",
       "status": "in_preparation"
+    },
+    {
+      "bytes": 7787,
+      "count": 2,
+      "name": "lists",
+      "sha256": "b236c6847f2627c957086a6b41564642cfc78a9d0c7fdaeeee07f65821b7ff3d",
+      "status": "published"
+    },
+    {
+      "bytes": 4017,
+      "count": 2,
+      "name": "brands",
+      "sha256": "99f083ed911eb5d5a634fd8048fbc9f4290ad038517b7161b9317af52dc6e1e4",
+      "status": "published"
     }
   ],
   "generated_at": "2026-10-26T06:00:00Z",

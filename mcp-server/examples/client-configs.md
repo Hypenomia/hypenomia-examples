@@ -1,6 +1,6 @@
 # Client configuration (local stdio)
 
-Replace `/path/to` with the folder that holds `mcp-server`. Run `npm install` there once. `MCP_DATA_SOURCE` must point at a public-data root (directory or https URL); there is no default. For a synthetic development edition also set `MCP_ALLOW_SYNTHETIC=1`.
+Replace `/path/to` with the folder that holds `mcp-server`. Run `npm ci` there once. `MCP_DATA_SOURCE` must point at a public-data root (directory or https URL); there is no default. For a synthetic development edition also set `MCP_ALLOW_SYNTHETIC=1`.
 
 Claude Code:
 

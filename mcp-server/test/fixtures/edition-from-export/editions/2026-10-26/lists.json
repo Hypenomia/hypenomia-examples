@@ -1,0 +1,323 @@
+{
+  "cards": [
+    {
+      "brand_matched": {
+        "contents": 5,
+        "evidence": "link_and_verified_tag",
+        "missing_reason": null
+      },
+      "category": "beauty",
+      "category_label": "Beauty",
+      "content_mix": {
+        "as_of": "2026-10-25",
+        "items": 41,
+        "missing_reason": null,
+        "per_week": 3.2,
+        "post_share": 78,
+        "reel_share": 22,
+        "window_days": 90
+      },
+      "display_name": "Sentetik Güzellik A",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "max": 5.0,
+        "min": 3.0,
+        "missing_reason": null,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "max": 50000,
+        "min": 25000,
+        "missing_reason": null
+      },
+      "handle": "synthetic_beauty_a",
+      "locked": {
+        "audience": true,
+        "brand_names": true,
+        "contact": true,
+        "growth": true,
+        "sponsored_share": true,
+        "story_estimate": true
+      },
+      "platform": "instagram",
+      "slug": "sentetik-guzellik-a",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K"
+    },
+    {
+      "brand_matched": {
+        "contents": 2,
+        "evidence": "link_and_verified_tag",
+        "missing_reason": null
+      },
+      "category": "beauty",
+      "category_label": "Beauty",
+      "content_mix": {
+        "as_of": "2026-10-25",
+        "items": 28,
+        "missing_reason": null,
+        "per_week": 2.2,
+        "post_share": 57,
+        "reel_share": 43,
+        "window_days": 90
+      },
+      "display_name": "Sentetik Güzellik B",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "max": 5.0,
+        "min": 3.0,
+        "missing_reason": null,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "max": 25000,
+        "min": 10000,
+        "missing_reason": null
+      },
+      "handle": "synthetic_beauty_b",
+      "locked": {
+        "audience": true,
+        "brand_names": true,
+        "contact": false,
+        "growth": true,
+        "sponsored_share": true,
+        "story_estimate": false
+      },
+      "platform": "instagram",
+      "slug": "sentetik-guzellik-b",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K"
+    },
+    {
+      "brand_matched": {
+        "contents": 0,
+        "evidence": "link_and_verified_tag",
+        "missing_reason": null
+      },
+      "category": "beauty",
+      "category_label": "Beauty",
+      "content_mix": {
+        "as_of": "2026-10-24",
+        "items": 35,
+        "missing_reason": null,
+        "per_week": 2.7,
+        "post_share": 43,
+        "reel_share": 57,
+        "window_days": 90
+      },
+      "display_name": "Sentetik Güzellik C",
+      "engagement": {
+        "as_of": "2026-10-24",
+        "max": 3.0,
+        "min": 2.0,
+        "missing_reason": null,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-24",
+        "max": 100000,
+        "min": 50000,
+        "missing_reason": null
+      },
+      "handle": "synthetic_beauty_c",
+      "locked": {
+        "audience": false,
+        "brand_names": false,
+        "contact": true,
+        "growth": true,
+        "sponsored_share": true,
+        "story_estimate": true
+      },
+      "platform": "instagram",
+      "slug": "sentetik-guzellik-c",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K"
+    },
+    {
+      "brand_matched": {
+        "contents": 1,
+        "evidence": "link_and_verified_tag",
+        "missing_reason": null
+      },
+      "category": "beauty",
+      "category_label": "Beauty",
+      "content_mix": {
+        "as_of": "2026-10-25",
+        "items": 19,
+        "missing_reason": null,
+        "per_week": 1.5,
+        "post_share": 68,
+        "reel_share": 32,
+        "window_days": 90
+      },
+      "display_name": "Sentetik Güzellik D",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "max": 8.0,
+        "min": 5.0,
+        "missing_reason": null,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "max": 25000,
+        "min": 10000,
+        "missing_reason": null
+      },
+      "handle": "synthetic_beauty_d",
+      "locked": {
+        "audience": true,
+        "brand_names": true,
+        "contact": false,
+        "growth": false,
+        "sponsored_share": true,
+        "story_estimate": true
+      },
+      "platform": "instagram",
+      "slug": "sentetik-guzellik-d",
+      "tier": "micro",
+      "tier_label": "Micro · 10K–100K"
+    },
+    {
+      "brand_matched": {
+        "contents": 7,
+        "evidence": "link_and_verified_tag",
+        "missing_reason": null
+      },
+      "category": "beauty",
+      "category_label": "Beauty",
+      "content_mix": {
+        "as_of": "2026-10-25",
+        "items": 52,
+        "missing_reason": null,
+        "per_week": 4.0,
+        "post_share": 42,
+        "reel_share": 58,
+        "window_days": 90
+      },
+      "display_name": "Sentetik Güzellik E",
+      "engagement": {
+        "as_of": "2026-10-25",
+        "max": 2.0,
+        "min": 1.0,
+        "missing_reason": null,
+        "stale": false,
+        "state": "measured",
+        "unit": "percent",
+        "window_days": 90
+      },
+      "followers": {
+        "as_of": "2026-10-25",
+        "max": 500000,
+        "min": 250000,
+        "missing_reason": null
+      },
+      "handle": "synthetic_beauty_e",
+      "locked": {
+        "audience": true,
+        "brand_names": true,
+        "contact": true,
+        "growth": true,
+        "sponsored_share": true,
+        "story_estimate": true
+      },
+      "platform": "instagram",
+      "slug": "sentetik-guzellik-e",
+      "tier": "macro",
+      "tier_label": "Macro · 100K–1M"
+    }
+  ],
+  "header": {
+    "count": 2,
+    "data_as_of": {
+      "newest": "2026-10-25",
+      "oldest": "2026-10-24"
+    },
+    "edition": "2026-10-26",
+    "file": "lists",
+    "method_url": "https://hypenomia.com/en/methods/engagement",
+    "method_version": "px11-teaser-v1",
+    "missing_reason": null,
+    "period": {
+      "end": "2026-10-26",
+      "end_exclusive": true,
+      "start": "2026-09-26",
+      "tz": "Europe/Istanbul"
+    },
+    "schema_version": "px11-public-edition-v1",
+    "snapshot_id": "2026-10-26.r1",
+    "source_url": "https://hypenomia.com/data/public/2026-10-26/lists.json",
+    "status": "published"
+  },
+  "lists": [
+    {
+      "category": "beauty",
+      "key": "beauty",
+      "slugs": [
+        "sentetik-guzellik-d",
+        "sentetik-guzellik-b",
+        "sentetik-guzellik-a",
+        "sentetik-guzellik-c",
+        "sentetik-guzellik-e"
+      ],
+      "tier": null
+    },
+    {
+      "category": "beauty",
+      "key": "beauty-micro",
+      "slugs": [
+        "sentetik-guzellik-d",
+        "sentetik-guzellik-b",
+        "sentetik-guzellik-a",
+        "sentetik-guzellik-c"
+      ],
+      "tier": "micro"
+    }
+  ],
+  "method": {
+    "brand_window_days": 30,
+    "content_window_days": 90,
+    "engagement_edges": [
+      0.0,
+      0.5,
+      1.0,
+      2.0,
+      3.0,
+      5.0,
+      8.0,
+      12.0
+    ],
+    "follower_edges": [
+      0,
+      10000,
+      25000,
+      50000,
+      100000,
+      250000,
+      500000,
+      1000000,
+      2500000,
+      5000000,
+      10000000
+    ],
+    "max_cards": 20,
+    "min_cards": 3,
+    "order": "engagement_rate_desc_then_followers_desc",
+    "pool_only": true,
+    "version": "px11-teaser-v1"
+  }
+}

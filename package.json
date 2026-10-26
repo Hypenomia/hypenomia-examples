@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Synthetic sample outputs, a data dictionary and two offline workflows for Hypenomia's public influencer data tools.",
+  "description": "Open examples for Hypenomia: synthetic sample outputs, a data dictionary, two offline workflows and a read-only MCP server.",
   "engines": { "node": ">=24" },
   "scripts": {
     "test": "node --test \"test/*.test.mjs\"",
