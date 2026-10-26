@@ -16,10 +16,10 @@ const ENVELOPE = ["schema_version", "snapshot_id", "edition", "data_as_of", "per
 const ALLOWED_KEYS = new Set([...ENVELOPE, "oldest", "newest", "start", "end", "end_exclusive", "tz",
   "filter", "category", "tier", "open_pool_size", "order", "results", "slug", "handle", "display_name", "category_label", "tier_label",
   "followers", "rounded", "unit", "as_of", "missing_reason", "engagement", "state", "rate", "window_days", "items_90d", "stale",
-  "score", "display", "coverage", "confidence", "calculated_at", "formula_version", "turkey_basis",
+  "quality_score_locked", "turkey_basis",
   "pool_reason", "template", "url", "found",
   "a", "b", "bands", "band", "reason", "comparable", "same_tier", "same_formula_version", "er_dates_gap_days", "er_dates_within_limit",
-  "margins", "score_points", "engagement_relative", "engagement_dates_days", "notes",
+  "margins", "engagement_relative", "engagement_dates_days", "notes",
   "platform", "metric", "universe", "computed_at", "min_sample", "stale_after_days", "cell", "cohort", "n", "excluded", "suppressed", "p25", "p50", "p75", "status"]);
 const FORBIDDEN_KEYS = ["id", "ig_user_id", "platform_user_id", "follower_count", "bio", "email", "phone", "caption", "s3_media_url", "growth_30d", "extra_data"];
 const A = "sentetik-guzellik-a", B = "sentetik-guzellik-b";
@@ -88,8 +88,8 @@ test("get one sample: followers object, per-metric dates, stale and missing reas
   const a = (await run("get_creator_example", { slug: A })).structuredContent;
   assert.equal(a.data.found, true);
   assert.deepEqual(a.data.followers, { rounded: 48000, unit: 1000, as_of: "2026-10-25", missing_reason: null });
-  assert.equal(a.data.score.display, 74);
-  assert.equal(a.data.score.calculated_at, "2026-10-25");
+  assert.equal(a.data.score, undefined, "SQS is not returned");
+  assert.equal(a.data.quality_score_locked, true);
   assert.equal(a.data_as_of.newest, "2026-10-25");
   assert.equal(a.period, null);
   const zero = (await run("get_creator_example", { slug: "sentetik-yemek-a" })).structuredContent;
@@ -98,10 +98,9 @@ test("get one sample: followers object, per-metric dates, stale and missing reas
   const stale = (await run("get_creator_example", { slug: "sentetik-seyahat-a" })).structuredContent;
   assert.equal(stale.data.engagement.stale, true);
   const pending = (await run("get_creator_example", { slug: "sentetik-yasam-a" })).structuredContent;
-  assert.equal(pending.data.score.state, "pending");
-  assert.equal(pending.data.score.display, null);
+  assert.equal(pending.data.score, undefined);
   const none = (await run("get_creator_example", { slug: "sentetik-yemek-b" })).structuredContent;
-  assert.equal(none.data.score.state, "insufficient_coverage");
+  assert.equal(none.data.score, undefined);
 });
 
 test("no existence oracle: every unknown input yields identical bytes", async () => {
@@ -160,6 +159,40 @@ test("matches counts returned records; count stays the file count", async () => 
   assert.equal((await call(client, "get_creator_example", { slug: "nope-x" })).structuredContent.matches, 0);
 });
 
+test("SQS canary: the edition still carries scores, formulas and score bands; no tool output or Markdown contains them", async () => {
+  const all = [...snap.creators.values()];
+  assert.ok(all.some((c) => c.score && c.score.display !== null), "canary: the edition has score values");
+  const formulas = new Set(all.map((c) => c.score?.formula_version).filter(Boolean));
+  const blobs = [];
+  for (const c of all) {
+    const r = await call(client, "get_creator_example", { slug: c.slug });
+    blobs.push(JSON.stringify(r.structuredContent), r.content[0].text);
+  }
+  for (const x of all) for (const y of all) {
+    if (x.slug === y.slug) continue;
+    const r = await call(client, "compare_creator_examples", { slug_a: x.slug, slug_b: y.slug });
+    blobs.push(JSON.stringify(r.structuredContent), r.content[0].text);
+    const d = r.structuredContent.data;
+    if (d.found) {
+      assert.equal(d.bands.score, undefined);
+      assert.equal(d.margins.score_points, undefined);
+      assert.equal(d.comparable?.same_formula_version, undefined);
+    }
+  }
+  const s = await call(client, "search_creator_examples", {});
+  blobs.push(JSON.stringify(s.structuredContent), s.content[0].text);
+  const text = blobs.join("\n");
+  for (const f of formulas) assert.ok(!text.includes(f), f);
+  assert.doesNotMatch(text, /"score"|"sqs"|score_points|same_formula_version|formula_version|"coverage"|"confidence"|Quality score \d/);
+  const tools = (await client.listTools()).tools;
+  for (const t of tools.filter((t) => t.name.endsWith("creator_example") || t.name.endsWith("creator_examples"))) {
+    assert.doesNotMatch(JSON.stringify(t.inputSchema), /score/i);
+  }
+  const get = tools.find((t) => t.name === "get_creator_example");
+  assert.match(get.description, /SQS quality score is not public/);
+  assert.match(tools.find((t) => t.name === "compare_creator_examples").description, /quality score is not public/);
+});
+
 test("compare: identical slugs rejected; both directions are published and looked up exactly, never flipped", async () => {
   const same = await call(client, "compare_creator_examples", { slug_a: A, slug_b: A });
   assert.equal(same.isError, true);
@@ -172,9 +205,10 @@ test("compare: identical slugs rejected; both directions are published and looke
     assert.equal(d.found, true, `${x} ${y}`);
     assert.equal(d.a.slug, x);
     assert.equal(d.b.slug, y);
-    assert.deepEqual(d.bands, pair.bands, "bands exactly as published for this order");
-    assert.deepEqual(d.comparable, pair.comparable);
-    assert.deepEqual(d.notes, pair.notes);
+    assert.deepEqual(d.bands, { engagement: pair.bands.engagement }, "engagement band exactly as published for this order");
+    const { same_formula_version, ...cmp } = pair.comparable ?? {};
+    assert.deepEqual(d.comparable, pair.comparable === null ? null : cmp);
+    assert.deepEqual(d.notes, pair.notes.filter((n) => !/score|sqs|formula/i.test(n)));
     assert.ok(!JSON.stringify(d).match(/winner|better|best/i));
     n++;
   }
@@ -280,7 +314,7 @@ test("parity: tool values equal the edition files field by field", async () => {
     const d = (await call(client, "get_creator_example", { slug: c.slug })).structuredContent.data;
     assert.deepEqual(d.followers, c.followers);
     assert.deepEqual(d.engagement, c.engagement);
-    assert.deepEqual(d.score, c.score);
+    assert.equal(d.score, undefined);
     assert.equal(d.category, c.category);
     assert.equal(d.tier_label, c.tier_label);
   }

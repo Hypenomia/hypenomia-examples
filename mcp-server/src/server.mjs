@@ -46,8 +46,8 @@ function schemas(enums) {
 
 const DEFS = {
   search_creator_examples: ["Search open creator examples", "Up to 3 example creators from the selected open pool, filtered by category and/or tier. Fixed order, no paging; the filter is never widened.", T.searchCreatorExamples],
-  get_creator_example: ["Get one open creator example", "Published summary of one open-pool creator by slug or Instagram handle (case-insensitive, optional @). Unknown keys return found:false.", T.getCreatorExample],
-  compare_creator_examples: ["Compare two open creator examples", "Published comparison bands for two different open-pool creators, each given as slug or Instagram handle (score and engagement). Bands only, no winner.", T.compareCreatorExamples],
+  get_creator_example: ["Get one open creator example", "Published summary of one open-pool creator by slug or Instagram handle (case-insensitive, optional @): followers band, engagement rate, category, size group, with dates. The SQS quality score is not public for named creators and is never returned (quality_score_locked: true). Unknown keys return found:false.", T.getCreatorExample],
+  compare_creator_examples: ["Compare two open creator examples", "Published comparison bands for two different open-pool creators, each given as slug or Instagram handle (engagement bands). No SQS or score comparison is returned: the quality score is not public for named creators. Bands only, no winner.", T.compareCreatorExamples],
   get_instagram_benchmark: ["Instagram engagement benchmark", "Engagement-rate percentiles (p25/p50/p75) for a follower tier and category cell of the tracked set. Suppressed cells return null values.", T.getInstagramBenchmark],
 };
 

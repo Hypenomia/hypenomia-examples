@@ -6,6 +6,17 @@ export const MAX_RESULTS = 3;
 const NOT_IN_POOL = "not_in_open_pool";
 const SITE = "https://hypenomia.com";
 
+// The SQS quality score is not public for named creators: editions that still carry it are read, never returned.
+const SQS_NOTE = /score|sqs|formula/i;
+function publicComparable(c) {
+  const { same_formula_version, ...rest } = c;
+  return { ...rest };
+}
+function publicMargins(m) {
+  const { score_points, ...rest } = m;
+  return { ...rest };
+}
+
 function creatorCard(c, lang) {
   return {
     slug: c.slug,
@@ -17,7 +28,7 @@ function creatorCard(c, lang) {
     tier_label: c.tier_label,
     followers: { ...c.followers },
     engagement: { ...c.engagement },
-    score: { ...c.score },
+    quality_score_locked: true,
     turkey_basis: [...c.turkey_basis],
     pool_reason: { ...c.pool_reason, turkey_basis: [...c.pool_reason.turkey_basis] },
     url: `${SITE}/${lang}/tools/samples/${c.slug}`,
@@ -107,10 +118,10 @@ export function compareCreatorExamples(snap, { slug_a, slug_b, lang }) {
       found: true,
       a: creatorCard(a, lang),
       b: creatorCard(b, lang),
-      bands: structuredClone(pair.bands),
-      comparable: pair.comparable === null ? null : { ...pair.comparable },
-      margins: { ...file.margins },
-      notes: [...pair.notes],
+      bands: { engagement: structuredClone(pair.bands.engagement) },
+      comparable: pair.comparable === null ? null : publicComparable(pair.comparable),
+      margins: publicMargins(file.margins),
+      notes: pair.notes.filter((n) => !SQS_NOTE.test(n)),
     },
   };
 }
@@ -182,12 +193,11 @@ export function toMarkdown(env) {
       (c.suppressed ? ", suppressed (below minimum sample)." : `, p25 ${c.p25}, median ${c.p50}, p75 ${c.p75} percent.`);
   } else if (d.a) {
     body = [`${d.a.display_name ?? d.a.handle} vs ${d.b.display_name ?? d.b.handle} (bands, a against b, no winner):`,
-      `- score: ${d.bands.score.band}${d.bands.score.reason ? ` (${d.bands.score.reason})` : ""}`,
       `- engagement: ${d.bands.engagement.band}${d.bands.engagement.reason ? ` (${d.bands.engagement.reason})` : ""}`,
       d.notes.length ? `Notes: ${d.notes.join(", ")}` : ""].filter(Boolean).join("\n");
   } else {
     body = `${d.display_name ?? d.handle} (${d.slug}) · ${d.category_label} · ${d.tier_label} · ${kfmt(d.followers)} followers
-Quality score ${d.score.display ?? "n/a"} (${d.score.formula_version ?? "n/a"}, ${d.score.calculated_at ?? "n/a"}); engagement ${d.engagement.rate ?? "n/a"}`;
+Engagement ${d.engagement.rate ?? "n/a"}; quality score (SQS): in the customer panel`;
   }
   return `${head}
 
