@@ -16,9 +16,9 @@ Aggregates only; no account appears in this file.
 | `benchmark.universe` | string | `tracked_set`: the accounts Hypenomia tracks, not every creator in a country |
 | `benchmark.network_scope` | string | networks enabled when the aggregate was built |
 | `benchmark.computed_at` | ISO datetime, UTC | when the aggregate was built |
-| `benchmark.data_as_of` | object | date range of the stored rates that were included |
-| `benchmark.data_as_of.oldest` | ISO date or null | oldest included rate date |
-| `benchmark.data_as_of.newest` | ISO date or null | newest included rate date |
+| `benchmark.data_as_of` | object | date range of the data records that were included (record dates, not measurement times) |
+| `benchmark.data_as_of.oldest` | ISO date or null | oldest included record date |
+| `benchmark.data_as_of.newest` | ISO date or null | newest included record date |
 | `benchmark.method` | object | how the numbers are made |
 | `benchmark.method.version` | string | benchmark method version |
 | `benchmark.method.metric` | string | `engagement_rate` |

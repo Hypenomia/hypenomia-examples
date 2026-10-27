@@ -10,7 +10,7 @@ Each edition file starts with a `header`; every tool result repeats it as a flat
 |---|---|
 | `schema_version` | `px11-public-edition-v1` |
 | `snapshot_id`, `edition` | `YYYY-MM-DD.rN` and `YYYY-MM-DD` |
-| `data_as_of` | `{oldest, newest}` dates of the measurements behind the file (either may be null) |
+| `data_as_of` | `{oldest, newest}` dates of the data edition or records behind the file, not when a metric was measured (either may be null) |
 | `period` | `{start, end, end_exclusive, tz}` or `null` (these files have none today) |
 | `method_version` | label of the method behind the file |
 | `count` | records in the file (not the number of matches) |

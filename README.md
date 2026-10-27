@@ -1,10 +1,10 @@
 # hypenomia-examples
 
-Open examples for [Hypenomia](https://hypenomia.com), an influencer analytics platform for brands and agencies in Turkey. Hypenomia tracks Instagram creators and the brands they work with (Stories, posts and Reels), and publishes how each number is made.
+Open examples for [Hypenomia](https://hypenomia.com), an influencer analytics platform for brands and agencies in Turkey. Hypenomia tracks Instagram creators and the brands they work with (Stories, posts and Reels), and explains metric definitions and scope.
 
 **Who this is for:** developers and analysts at brands and agencies who want to see how Hypenomia's public numbers are shaped, read them from code, or connect them to an AI assistant through MCP. It is not the product and holds no live customer data.
 
-**Türkçe:** Hypenomia, Türkiye'deki markalar ve ajanslar için bir influencer analitik platformudur; Instagram içerik üreticilerini ve çalıştıkları markaları (Story, gönderi, Reels) izler ve her sayının nasıl hesaplandığını yayımlar. Bu depo; açık örnek verisi üzerinde salt okunur bir MCP sunucusu, çevrimdışı örnek iş akışları ve tamamen sentetik örnek çıktılar içerir. Güvenlik bildirimleri: support@hypenomia.com.
+**Türkçe:** Hypenomia, Türkiye'deki markalar ve ajanslar için bir influencer analitik platformudur; Instagram içerik üreticilerini ve çalıştıkları markaları (Story, gönderi, Reels) izler ve metrik tanımlarını ve kapsamını açıklar. Bu depo; açık örnek verisi üzerinde salt okunur bir MCP sunucusu, çevrimdışı örnek iş akışları ve tamamen sentetik örnek çıktılar içerir. Güvenlik bildirimleri: support@hypenomia.com.
 
 ## What you can do with it
 
@@ -75,7 +75,7 @@ The server speaks MCP over stdio (or stateless HTTP with `npm start`). It advert
 
 ```text
 Sentetik Güzellik A (sentetik-guzellik-a) · Beauty · Micro · 10K–100K · ~48000 followers
-Quality score 74 (sqs-b5c-1, 2026-10-25); engagement 3.1234
+Engagement 3.1234; quality score (SQS): in the customer panel
 ```
 
 and an unknown name returns `Not found.` with `Missing: not_in_open_pool`, never an invented row. Client setup (Claude Code, Claude Desktop, MCP Inspector): [mcp-server/examples/client-configs.md](mcp-server/examples/client-configs.md). Details: [mcp-server/README.md](mcp-server/README.md).
@@ -97,7 +97,7 @@ and an unknown name returns `Not found.` with `Missing: not_in_open_pool`, never
 - Everything in this repository is synthetic. The workflow fixtures use handles like `example-creator-a`; Instagram does not allow hyphens in handles, so none is a real account. The MCP edition fixture uses names like `synthetic_beauty_a` and slugs like `sentetik-guzellik-a`. They are invented and labelled synthetic, but a handle in the underscore form is valid on Instagram and could exist, so do not read it as a statement about any account.
 - The MCP server serves a selected pool of open examples (10 in the bundled edition), not every creator in Turkey. There is no default data source: you point it at a public-data folder or URL. Hypenomia's live public edition is not published yet.
 - Rules the workflows keep: a comparison uses the bands in the response and never names a winner; rates and scores keep their dates, coverage and missing-data reasons, and null is never shown as zero; measured Reel plays and estimated Story views are kept apart and never added; shared creators count accounts that posted for two brands, not shared audience.
-- The quality score is no guarantee of sales or reach. Definitions: [SQS](https://hypenomia.com/en/methods/sqs), [engagement rate](https://hypenomia.com/en/methods/engagement), [Story estimate](https://hypenomia.com/en/methods/story-estimate).
+- The quality score is no guarantee of sales or reach. The SQS formula and weights are not published here; the MCP server never returns a score for a named creator, and the SQS values in the workflow output above are invented fixture numbers for the placeholder handles `example-creator-a` and `example-creator-b`. Definitions: [SQS](https://hypenomia.com/en/methods/sqs), [engagement rate](https://hypenomia.com/en/methods/engagement), [Story estimate](https://hypenomia.com/en/methods/story-estimate).
 
 ## Licence and security
 
