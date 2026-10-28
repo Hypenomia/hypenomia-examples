@@ -4,7 +4,7 @@ import { McpError, ErrorCode } from "@modelcontextprotocol/sdk/types.js";
 
 export const MAX_RESULTS = 3;
 const NOT_IN_POOL = "not_in_open_pool";
-const SITE = "https://hypenomia.com";
+const SITE = "https://starlecta.com";
 
 // The SQS quality score is not public for named creators: editions that still carry it are read, never returned.
 const SQS_NOTE = /score|sqs|formula/i;

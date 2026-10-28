@@ -1,4 +1,4 @@
-// Comparison note for two creators from a saved Hypenomia comparison payload.
+// Comparison note for two creators from a saved Starlecta comparison payload.
 // Uses the bands the payload carries; never recomputes them and never names a winner.
 import { int, pct, platformName, runCli, table } from "./lib.mjs";
 
@@ -46,7 +46,7 @@ export function compareNote(c) {
   const lines = [
     `# Comparison note: ${a.handle} and ${b.handle}`,
     "",
-    `Source: Hypenomia public comparison (${c.method_version}), ${platformName(c.platform)}. Stored values only.`,
+    `Source: Starlecta public comparison (${c.method_version}), ${platformName(c.platform)}. Stored values only.`,
     "",
     table(
       ["", a.handle, b.handle],
@@ -75,7 +75,7 @@ export function compareNote(c) {
   lines.push("", "## Read before deciding", "", ...[...new Set(notes)].map((n) => `- ${n}`));
   lines.push(
     "",
-    "Definitions: https://hypenomia.com/en/methods/sqs and https://hypenomia.com/en/methods/engagement",
+    "Definitions: https://starlecta.com/en/methods/sqs and https://starlecta.com/en/methods/engagement",
     "",
   );
   return lines.join("\n");

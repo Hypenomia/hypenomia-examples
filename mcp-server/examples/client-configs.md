@@ -5,7 +5,7 @@ Replace `/path/to` with the folder that holds `mcp-server`. Run `npm ci` there o
 Claude Code:
 
 ```sh
-claude mcp add hypenomia-examples -e MCP_DATA_SOURCE=/path/to/public-data -- node /path/to/mcp-server/src/stdio.mjs
+claude mcp add starlecta-examples -e MCP_DATA_SOURCE=/path/to/public-data -- node /path/to/mcp-server/src/stdio.mjs
 ```
 
 Claude Desktop / any client with a JSON config:
@@ -13,7 +13,7 @@ Claude Desktop / any client with a JSON config:
 ```json
 {
   "mcpServers": {
-    "hypenomia-examples": {
+    "starlecta-examples": {
       "command": "node",
       "args": ["/path/to/mcp-server/src/stdio.mjs"],
       "env": { "MCP_DATA_SOURCE": "/path/to/public-data" }
@@ -26,7 +26,7 @@ Local HTTP (stateless Streamable HTTP):
 
 ```sh
 MCP_DATA_SOURCE=/path/to/public-data npm start   # listens on 127.0.0.1:8080
-claude mcp add --transport http hypenomia-local http://127.0.0.1:8080/mcp
+claude mcp add --transport http starlecta-local http://127.0.0.1:8080/mcp
 ```
 
 MCP Inspector (CLI):

@@ -91,7 +91,7 @@ export function competitorBrief(input) {
     "- Covers accounts and brands in the tracked set, not all of Instagram.",
     `- ${int(me.left_out_posts)} possible ${subject} posts were left out for lack of evidence.`,
     "- Measured and estimated values are never added into one number.",
-    "- Story method: https://hypenomia.com/en/methods/story-estimate",
+    "- Story method: https://starlecta.com/en/methods/story-estimate",
     "",
   ];
   return lines.join("\n");

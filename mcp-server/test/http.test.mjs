@@ -35,7 +35,7 @@ test("POST initialize: JSON response, no session id, no SSE", async () => {
   assert.match(r.headers.get("content-type"), /application\/json/);
   assert.equal(r.headers.get("mcp-session-id"), null);
   const j = await r.json();
-  assert.equal(j.result.serverInfo.name, "hypenomia-open-examples");
+  assert.equal(j.result.serverInfo.name, "starlecta-open-examples");
   assert.match(j.result.instructions, /data_as_of/);
 });
 

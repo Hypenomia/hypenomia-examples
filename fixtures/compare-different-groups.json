@@ -1,5 +1,5 @@
 {
- "_synthetic": "Synthetic: made by the Hypenomia API builders from invented rows. Not real data.",
+ "_synthetic": "Synthetic: made by the Starlecta API builders from invented rows. Not real data.",
  "_source": "GET /api/v1/public/accounts/instagram/compare",
  "method_version": "px11-compare-v1",
  "platform": "instagram",

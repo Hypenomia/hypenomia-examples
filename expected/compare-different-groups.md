@@ -1,6 +1,6 @@
 # Comparison note: example-creator-a and example-creator-c
 
-Source: Hypenomia public comparison (px11-compare-v1), Instagram. Stored values only.
+Source: Starlecta public comparison (px11-compare-v1), Instagram. Stored values only.
 
 |  | example-creator-a | example-creator-c |
 | --- | --- | --- |
@@ -24,4 +24,4 @@ Source: Hypenomia public comparison (px11-compare-v1), Instagram. Stored values 
 - The quality score describes stored public signals. It is not a guarantee of sales, reach or campaign results.
 - Nothing here says two accounts share the same people; audience overlap is not measured.
 
-Definitions: https://hypenomia.com/en/methods/sqs and https://hypenomia.com/en/methods/engagement
+Definitions: https://starlecta.com/en/methods/sqs and https://starlecta.com/en/methods/engagement

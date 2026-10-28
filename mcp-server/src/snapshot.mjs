@@ -18,7 +18,7 @@ const FORBIDDEN_KEYS = new Set(["id", "account_id", "influencer_account_id", "ig
   "follower_count", "followers_exact", "growth_30d", "follower_history", "bio", "biography", "email", "phone", "external_url", "city", "gender",
   "caption", "s3_media_url", "thumbnail", "thumbnail_file_path", "media_url", "views", "audience_reach_multiple", "virality_level", "extra_data",
   "notes_internal", "notes_private", "sqs_components", "reel_er", "rationale", "traits", "checks", "verified_by"]);
-const FORBIDDEN_TEXT = /amazonaws|x-amz|svc\.cluster\.local|[\w.+-]+@(?!hypenomia\.com\b)[\w-]+\.[\w.]+/i;
+const FORBIDDEN_TEXT = /amazonaws|x-amz|svc\.cluster\.local|[\w.+-]+@(?!(?:starlecta|hypenomia)\.com\b)[\w-]+\.[\w.]+/i;
 
 export const LIMITS = { fileBytes: 2_000_000, fetchTimeoutMs: 5000 };
 

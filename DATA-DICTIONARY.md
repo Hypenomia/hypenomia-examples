@@ -4,7 +4,7 @@ Every field in `fixtures/`. A test checks this table against the fixtures in bot
 
 Paths: `benchmark.` = `fixtures/benchmark-instagram-engagement.json`; `compare.` = `fixtures/compare-*.json`; `summary.` = the `a` and `b` objects inside a comparison; `brief.` = `fixtures/brief-input.json`. `[]` is any list item, `*` any key of a map. Every file also carries `_synthetic` (it is invented data), and `_source` or `_format`.
 
-Definitions of the scores and rates: [SQS](https://hypenomia.com/en/methods/sqs), [engagement rate](https://hypenomia.com/en/methods/engagement), [Story estimate](https://hypenomia.com/en/methods/story-estimate).
+Definitions of the scores and rates: [SQS](https://starlecta.com/en/methods/sqs), [engagement rate](https://starlecta.com/en/methods/engagement), [Story estimate](https://starlecta.com/en/methods/story-estimate).
 
 ## Benchmark: engagement rate by follower tier and category
 
@@ -13,7 +13,7 @@ Aggregates only; no account appears in this file.
 | Path | Type | Meaning |
 |---|---|---|
 | `benchmark.platform` | string | `instagram` |
-| `benchmark.universe` | string | `tracked_set`: the accounts Hypenomia tracks, not every creator in a country |
+| `benchmark.universe` | string | `tracked_set`: the accounts Starlecta tracks, not every creator in a country |
 | `benchmark.network_scope` | string | networks enabled when the aggregate was built |
 | `benchmark.computed_at` | ISO datetime, UTC | when the aggregate was built |
 | `benchmark.data_as_of` | object | date range of the data records that were included (record dates, not measurement times) |
@@ -116,7 +116,7 @@ Aggregates only; no account appears in this file.
 | `summary.limits.quality_not_guarantee` | string | as above |
 | `summary.limits.no_audience_overlap` | string | as above |
 
-## Brief input (example format, not the Hypenomia API)
+## Brief input (example format, not the Starlecta API)
 
 | Path | Type | Meaning |
 |---|---|---|

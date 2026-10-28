@@ -1,6 +1,6 @@
-# Hypenomia open-examples MCP server
+# Starlecta open-examples MCP server
 
-A small, read-only [Model Context Protocol](https://modelcontextprotocol.io) server. It lets an assistant read what [Hypenomia](https://hypenomia.com) publishes openly: a selected pool of example creators, and an Instagram engagement benchmark. It reads the same public edition files the website reads (`latest.json`, `manifest.json`, `creators.json`, `pairs.json`, `benchmark.json`, produced by the exporter in the customer API repo). It has no database, API, provider or secret access.
+A small, read-only [Model Context Protocol](https://modelcontextprotocol.io) server. It lets an assistant read what [Starlecta](https://starlecta.com) publishes openly: a selected pool of example creators, and an Instagram engagement benchmark. It reads the same public edition files the website reads (`latest.json`, `manifest.json`, `creators.json`, `pairs.json`, `benchmark.json`, produced by the exporter in the customer API repo). It has no database, API, provider or secret access.
 
 Status: early example build. There is no default data source and no built-in data. Tests use a **synthetic** edition (`test/fixtures/edition-from-export/`). A synthetic edition is refused unless `MCP_ALLOW_SYNTHETIC=1` is set (development only).
 
@@ -47,7 +47,7 @@ Invalid input (unknown enum, extra argument, bad edition string) comes back as a
 - re-reading the same old files never makes them newer: results carry the files' own `data_as_of`, and `serve_until` bounds their life;
 
 - every file read is size-capped and checked against its manifest sha256, byte count and `header` (edition, snapshot_id, file, count); same-origin only, no redirects, 5 s timeout;
-- a forbidden key (internal ids, exact followers, bio, contact, media URLs) or text pattern (signed URLs, emails other than `support@hypenomia.com`) fails the load;
+- a forbidden key (internal ids, exact followers, bio, contact, media URLs) or text pattern (signed URLs, emails other than `support@starlecta.com`) fails the load;
 - creators, pairs and benchmark cells are cross-checked against the manifest enums, samples and the pool;
 - HTTP mode refreshes every 10 minutes; a transient failure keeps the last good edition up to 24 hours, a missing (404/410) or unlisted edition is dropped at once.
 

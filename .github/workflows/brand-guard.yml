@@ -1,0 +1,13 @@
+name: brand-guard
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  brand-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Previous product name only in the allowlist
+        run: bash .github/brand-guard.sh

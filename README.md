@@ -1,21 +1,21 @@
-# hypenomia-examples
+# starlecta-examples
 
-Open examples for [Hypenomia](https://hypenomia.com), an influencer analytics platform for brands and agencies in Turkey. Hypenomia tracks Instagram creators and the brands they work with (Stories, posts and Reels), and explains metric definitions and scope.
+Open examples for [Starlecta](https://starlecta.com), an influencer analytics platform for brands and agencies in Turkey. Starlecta tracks Instagram creators and the brands they work with (Stories, posts and Reels), and explains metric definitions and scope.
 
-**Who this is for:** developers and analysts at brands and agencies who want to see how Hypenomia's public numbers are shaped, read them from code, or connect them to an AI assistant through MCP. It is not the product and holds no live customer data.
+**Who this is for:** developers and analysts at brands and agencies who want to see how Starlecta's public numbers are shaped, read them from code, or connect them to an AI assistant through MCP. It is not the product and holds no live customer data.
 
-**Türkçe:** Hypenomia, Türkiye'deki markalar ve ajanslar için bir influencer analitik platformudur; Instagram içerik üreticilerini ve çalıştıkları markaları (Story, gönderi, Reels) izler ve metrik tanımlarını ve kapsamını açıklar. Bu depo; açık örnek verisi üzerinde salt okunur bir MCP sunucusu, çevrimdışı örnek iş akışları ve tamamen sentetik örnek çıktılar içerir. Güvenlik bildirimleri: support@hypenomia.com.
+**Türkçe:** Starlecta, Türkiye'deki markalar ve ajanslar için bir influencer analitik platformudur; Instagram içerik üreticilerini ve çalıştıkları markaları (Story, gönderi, Reels) izler ve metrik tanımlarını ve kapsamını açıklar. Bu depo; açık örnek verisi üzerinde salt okunur bir MCP sunucusu, çevrimdışı örnek iş akışları ve tamamen sentetik örnek çıktılar içerir. Güvenlik bildirimleri: support@starlecta.com.
 
 ## What you can do with it
 
-| Need | Example in this repo | Guide on hypenomia.com |
+| Need | Example in this repo | Guide on starlecta.com |
 |---|---|---|
-| Compare two creators without declaring a winner, and see when a comparison is not valid | `workflows/compare-two-creators.mjs` | [Compare two creators](https://hypenomia.com/en/guides/compare-two-creators) |
-| Brief a client on competitor brands' creator activity, from aggregates only | `workflows/competitor-brief.mjs` | [Agency sector and competitor brief](https://hypenomia.com/en/guides/agency-sector-competitor-brief) |
-| Let an AI assistant read a small open sample pool and an engagement benchmark | `mcp-server/` (read-only MCP server) | [Docs](https://hypenomia.com/en/docs) |
-| Understand every field and what null means | `DATA-DICTIONARY.md` | [Methods](https://hypenomia.com/en/methods) |
+| Compare two creators without declaring a winner, and see when a comparison is not valid | `workflows/compare-two-creators.mjs` | [Compare two creators](https://starlecta.com/en/guides/compare-two-creators) |
+| Brief a client on competitor brands' creator activity, from aggregates only | `workflows/competitor-brief.mjs` | [Agency sector and competitor brief](https://starlecta.com/en/guides/agency-sector-competitor-brief) |
+| Let an AI assistant read a small open sample pool and an engagement benchmark | `mcp-server/` (read-only MCP server) | [Docs](https://starlecta.com/en/docs) |
+| Understand every field and what null means | `DATA-DICTIONARY.md` | [Methods](https://starlecta.com/en/methods) |
 
-Also on hypenomia.com: [tracking competitor Instagram Stories](https://hypenomia.com/en/guides/track-competitor-instagram-stories), [sample reports](https://hypenomia.com/en/samples), [Turkey](https://hypenomia.com/en/turkey).
+Also on starlecta.com: [tracking competitor Instagram Stories](https://starlecta.com/en/guides/track-competitor-instagram-stories), [sample reports](https://starlecta.com/en/samples), [Turkey](https://starlecta.com/en/turkey).
 
 ## Try it
 
@@ -95,10 +95,10 @@ and an unknown name returns `Not found.` with `Missing: not_in_open_pool`, never
 ## Data and limits
 
 - Everything in this repository is synthetic. The workflow fixtures use handles like `example-creator-a`; Instagram does not allow hyphens in handles, so none is a real account. The MCP edition fixture uses names like `synthetic_beauty_a` and slugs like `sentetik-guzellik-a`. They are invented and labelled synthetic, but a handle in the underscore form is valid on Instagram and could exist, so do not read it as a statement about any account.
-- The MCP server serves a selected pool of open examples (10 in the bundled edition), not every creator in Turkey. There is no default data source: you point it at a public-data folder or URL. Hypenomia's live public edition is not published yet.
+- The MCP server serves a selected pool of open examples (10 in the bundled edition), not every creator in Turkey. There is no default data source: you point it at a public-data folder or URL. Starlecta's live public edition is not published yet.
 - Rules the workflows keep: a comparison uses the bands in the response and never names a winner; rates and scores keep their dates, coverage and missing-data reasons, and null is never shown as zero; measured Reel plays and estimated Story views are kept apart and never added; shared creators count accounts that posted for two brands, not shared audience.
-- The quality score is no guarantee of sales or reach. The SQS formula and weights are not published here; the MCP server never returns a score for a named creator, and the SQS values in the workflow output above are invented fixture numbers for the placeholder handles `example-creator-a` and `example-creator-b`. Definitions: [SQS](https://hypenomia.com/en/methods/sqs), [engagement rate](https://hypenomia.com/en/methods/engagement), [Story estimate](https://hypenomia.com/en/methods/story-estimate).
+- The quality score is no guarantee of sales or reach. The SQS formula and weights are not published here; the MCP server never returns a score for a named creator, and the SQS values in the workflow output above are invented fixture numbers for the placeholder handles `example-creator-a` and `example-creator-b`. Definitions: [SQS](https://starlecta.com/en/methods/sqs), [engagement rate](https://starlecta.com/en/methods/engagement), [Story estimate](https://starlecta.com/en/methods/story-estimate).
 
 ## Licence and security
 
-Code: MIT, see [LICENSE](LICENSE). The licence covers code only; reuse terms for Hypenomia data are separate, see [DATA-TERMS.md](DATA-TERMS.md) (draft). Report security issues to support@hypenomia.com, see [SECURITY.md](SECURITY.md).
+Code: MIT, see [LICENSE](LICENSE). The licence covers code only; reuse terms for Starlecta data are separate, see [DATA-TERMS.md](DATA-TERMS.md) (draft). Report security issues to support@starlecta.com, see [SECURITY.md](SECURITY.md).

@@ -1,6 +1,6 @@
 {
  "_synthetic": "Synthetic: invented brand aggregates. Not real brands, creators or campaigns.",
- "_format": "hypenomia-examples brief input v1. Example format for this folder, not the Hypenomia API.",
+ "_format": "starlecta-examples brief input v1. Example format for this folder, not the Starlecta API.",
  "platform": "instagram",
  "period": {"start": "2026-09-14", "end": "2026-10-13", "days": 30},
  "subject": "Brand A",

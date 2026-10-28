@@ -61,4 +61,4 @@ Creator accounts that posted for both brands in the period. This counts accounts
 - Covers accounts and brands in the tracked set, not all of Instagram.
 - 64 possible Brand A posts were left out for lack of evidence.
 - Measured and estimated values are never added into one number.
-- Story method: https://hypenomia.com/en/methods/story-estimate
+- Story method: https://starlecta.com/en/methods/story-estimate

@@ -1,0 +1,3 @@
+# Lines that may keep the previous product name. One fixed substring per line; a hit containing it is allowed.
+# Editions from the current exporter still carry the previous domain's support address.
+@(?!(?:starlecta|hypenomia)\.com\b)

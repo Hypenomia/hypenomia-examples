@@ -1,12 +1,12 @@
 {
-  "name": "hypenomia-mcp-server",
+  "name": "starlecta-mcp-server",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Read-only MCP server over Hypenomia's public open-sample snapshot. No database, no API, no provider access.",
+  "description": "Read-only MCP server over Starlecta's public open-sample snapshot. No database, no API, no provider access.",
   "license": "MIT",
   "engines": { "node": ">=24" },
-  "bin": { "hypenomia-mcp": "src/stdio.mjs" },
+  "bin": { "starlecta-mcp": "src/stdio.mjs" },
   "scripts": {
     "start": "node src/http.mjs",
     "stdio": "node src/stdio.mjs",

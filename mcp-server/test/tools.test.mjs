@@ -265,7 +265,7 @@ test("contract: envelope on every result, key allowlist, no forbidden keys or te
     assert.ok(r.content[0].text.includes(r.structuredContent.data_as_of.newest));
     collectKeys(r.structuredContent, keys);
     const text = JSON.stringify(r);
-    assert.ok(!/amazonaws|x-amz|svc\.cluster|@(?!hypenomia)/i.test(text));
+    assert.ok(!/amazonaws|x-amz|svc\.cluster|@(?!starlecta\.com\b)/i.test(text));
   }
   for (const k of keys) assert.ok(ALLOWED_KEYS.has(k) || (/^[a-z_]+$/.test(k) && (snap.enums.category.includes(k) || ["no_recent_content", "no_snapshot", "stale", "low_sample", "no_usable_counts", "not_measured"].includes(k))), `unexpected key ${k}`);
   for (const k of FORBIDDEN_KEYS) assert.ok(!keys.has(k), `forbidden key ${k}`);

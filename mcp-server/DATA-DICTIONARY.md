@@ -15,7 +15,7 @@ Each edition file starts with a `header`; every tool result repeats it as a flat
 | `method_version` | label of the method behind the file |
 | `count` | records in the file (not the number of matches) |
 | `matches` | result records this call returned: search 0 to 3 (capped, never a total beyond the cap), get and compare 1 if found else 0, benchmark 1 if the cell exists else 0 |
-| `source_url`, `method_url` | where the method lives (`method_url`, a page on hypenomia.com) and where the file is published (`source_url`; `null` means not yet published, as in the synthetic test data) |
+| `source_url`, `method_url` | where the method lives (`method_url`, a page on starlecta.com) and where the file is published (`source_url`; `null` means not yet published, as in the synthetic test data) |
 | `missing_reason` | `null`, or why data is missing. Never read a missing value as zero |
 | `lang` | tool results only: `en` or `tr` (affects the sample page link) |
 | `data` | tool results only: the tool payload |
@@ -42,7 +42,7 @@ Tool-level `missing_reason` values: `not_in_open_pool`, `few_open_samples`, `bel
 | `engagement` | `{state, rate, unit, window_days, items_90d, as_of, stale, missing_reason}`. `state` is `measured` or `not_measured`; `rate` is percent ((likes + comments) / followers x 100, weighted median); a measured 0 is 0, a missing value is `null` |
 | `quality_score_locked` | always `true`. The SQS quality score is not public for named creators and is never returned, even if an older edition file still carries a `score` block (it is read for validation only). It is available in the customer panel |
 | `turkey_basis`, `pool_reason` | evidence for the Turkey basis, and the template inputs for why the account is in the pool (the wording lives on the site) |
-| `url` | sample page on hypenomia.com for the requested `lang` |
+| `url` | sample page on starlecta.com for the requested `lang` |
 
 Rejected at load if they appear: internal ids, exact followers, follower history, bio, contact data, captions, media URLs, audience data.
 

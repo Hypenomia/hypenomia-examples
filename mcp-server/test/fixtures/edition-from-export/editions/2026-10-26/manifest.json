@@ -23,56 +23,56 @@
       "bytes": 12944,
       "count": 10,
       "name": "creators",
-      "sha256": "66dc4a2ebb11284cb872e859e77b004c370ae4ba5f125c073f231a16fa15da5f",
+      "sha256": "a88d2334c3a7fc1c0947c8b620106e16dfb6236d1b73c46cb0692cb20dd7285c",
       "status": "published"
     },
     {
       "bytes": 46310,
       "count": 90,
       "name": "pairs",
-      "sha256": "115f492af59db66aff073702595493c7f18ed9d5470fa9dd0c727e1db87be610",
+      "sha256": "4258b27428e0de3e9916dbb58db12dceb0b2fcbcba9469f8cfd626918632e297",
       "status": "published"
     },
     {
       "bytes": 30495,
       "count": 105,
       "name": "benchmark",
-      "sha256": "6e60cf9409ac33438d019559b834beb76a83fe9c0aee7eb3a9a36af3345533d4",
+      "sha256": "1e35cbb3c30fb16a77147cf021e72356b3bc88da5763c9f580fde6c8353ed805",
       "status": "published"
     },
     {
       "bytes": 2791,
       "count": 3,
       "name": "weekly",
-      "sha256": "d0010be653345612f004dc00178a3d6931cbd6f033988c8b0f702cb208e4a5a6",
+      "sha256": "bb1c5fe45e6155f0215ec093dc5c515f2d74fb380148ff6657a8de1f72f26433",
       "status": "published"
     },
     {
       "bytes": 2189,
       "count": 3,
       "name": "content",
-      "sha256": "0b768f7614ba4691b6fff83402f48d7d3733fa23669cf35255f12b6dbf4844cb",
+      "sha256": "9a8a3e5fc322128174152c4baa282935d3d41fc94f1b003d530425763a79b23c",
       "status": "published"
     },
     {
       "bytes": 503,
       "count": 0,
       "name": "insights",
-      "sha256": "8a16f71072a335e21b11e84ba7a11977c00d995497988a7a2eb1b3d94f0b2666",
+      "sha256": "1abd0c1d43791e29bfcfa874728dc2ee73ecade23a2b92f9ea35e9794db1d94c",
       "status": "in_preparation"
     },
     {
       "bytes": 7734,
       "count": 2,
       "name": "lists",
-      "sha256": "e3b7152551c6ad3f8bd62f9633113193b09f3a320ca37bcfc635e3b12b6cc3ee",
+      "sha256": "cb021fbac894232a95558c64a9828b4d3bd135f3277a5722e3231d03b9c1564a",
       "status": "published"
     },
     {
       "bytes": 3963,
       "count": 2,
       "name": "brands",
-      "sha256": "884c48b86f376444ad26643d88a00b9af475cca805508b9bfcbdd8dedb9dfe89",
+      "sha256": "68beb68f3dc2cb77ecd0186713e7856a55c1ca973217286bdacf1fc09e20c221",
       "status": "published"
     }
   ],
@@ -89,7 +89,7 @@
     "summary": "px11-account-summary-v1"
   },
   "pool_size": 10,
-  "removal_contact": "support@hypenomia.com",
+  "removal_contact": "support@starlecta.com",
   "revision": 1,
   "samples": [
     {

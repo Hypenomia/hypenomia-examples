@@ -10,3 +10,4 @@
 - `get_sector_brief` removed: the public schema has no per-sector data.
 - Tests run on an edition.
 - `get_weekly_highlights` and `get_content_examples` are not listed until their public payloads exist.
+- Renamed to Starlecta: package `starlecta-mcp-server`, bin `starlecta-mcp`, server name `starlecta-open-examples`, links to starlecta.com. Editions that carry the previous domain's support address still load.

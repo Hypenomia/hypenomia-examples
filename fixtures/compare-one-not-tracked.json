@@ -1,5 +1,5 @@
 {
- "_synthetic": "Synthetic: made by the Hypenomia API builders from invented rows. Not real data.",
+ "_synthetic": "Synthetic: made by the Starlecta API builders from invented rows. Not real data.",
  "_source": "GET /api/v1/public/accounts/instagram/compare",
  "method_version": "px11-compare-v1",
  "platform": "instagram",
@@ -47,7 +47,7 @@
   "platform": "instagram",
   "handle": "example-creator-x",
   "found": false,
-  "message": "This account is not in the set Hypenomia tracks. We do not look accounts up live.",
+  "message": "This account is not in the set Starlecta tracks. We do not look accounts up live.",
   "limits": {
    "quality_not_guarantee": "The quality score describes stored public signals. It is not a guarantee of sales, reach or campaign results.",
    "no_audience_overlap": "Nothing here says two accounts share the same people; audience overlap is not measured."

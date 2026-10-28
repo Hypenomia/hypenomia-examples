@@ -4,7 +4,7 @@ Applies to everything in this repository. The notes below describe the MCP serve
 
 ## Reporting a vulnerability
 
-Write to support@hypenomia.com with "Security" in the subject. Include the version, steps to reproduce and what you observed. Please do not open a public issue for a vulnerability, and do not test against other people's data. We will acknowledge within 3 business days.
+Write to support@starlecta.com with "Security" in the subject. Include the version, steps to reproduce and what you observed. Please do not open a public issue for a vulnerability, and do not test against other people's data. We will acknowledge within 3 business days.
 
 ## Design boundaries
 

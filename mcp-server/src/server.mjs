@@ -9,7 +9,7 @@ export const MAX_RESPONSE_BYTES = 64 * 1024;
 export const ALL_TOOLS = ["search_creator_examples", "get_creator_example", "compare_creator_examples", "get_instagram_benchmark"];
 
 export const INSTRUCTIONS = [
-  "Hypenomia open examples: a small, selected pool of public creator examples and one Instagram engagement benchmark.",
+  "Starlecta open examples: a small, selected pool of public creator examples and one Instagram engagement benchmark.",
   "Coverage is the selected open samples and the tracked set, not all creators in Turkey.",
   "Always cite data_as_of (the oldest and newest dates of the data edition or record, not when a metric was measured) and source_url (when not null) from the result. If missing_reason is set, say the data is missing and stop; do not estimate.",
   "Measured and estimated numbers are never added together. Comparisons are bands, not winners.",
@@ -55,7 +55,7 @@ const UNAVAILABLE = { isError: true, content: [{ type: "text", text: "Data tempo
 
 export function createMcpServer(store, { tools = ALL_TOOLS, maxResponseBytes = MAX_RESPONSE_BYTES } = {}) {
   const snapForEnums = store.get();
-  const server = new McpServer({ name: "hypenomia-open-examples", version: SERVER_VERSION }, { instructions: INSTRUCTIONS });
+  const server = new McpServer({ name: "starlecta-open-examples", version: SERVER_VERSION }, { instructions: INSTRUCTIONS });
   if (!snapForEnums) return server; // no tools without a snapshot; readiness fails upstream
   const sch = schemas(snapForEnums.enums);
   for (const name of tools) {

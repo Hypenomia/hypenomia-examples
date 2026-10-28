@@ -1,9 +1,9 @@
 {
-  "name": "hypenomia-examples",
+  "name": "starlecta-examples",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Open examples for Hypenomia: synthetic sample outputs, a data dictionary, two offline workflows and a read-only MCP server.",
+  "description": "Open examples for Starlecta: synthetic sample outputs, a data dictionary, two offline workflows and a read-only MCP server.",
   "engines": { "node": ">=24" },
   "scripts": {
     "test": "node --test \"test/*.test.mjs\"",
