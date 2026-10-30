@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "starlecta-key",
+      "description": "Starlecta agent key (starts with slk_)",
+      "password": true
+    }
+  ],
+  "servers": {
+    "starlecta": {
+      "type": "http",
+      "url": "https://starlecta.com/mcp",
+      "headers": {
+        "Authorization": "Bearer ${input:starlecta-key}"
+      }
+    }
+  }
+}

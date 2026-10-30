@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "starlecta": {
+      "command": "npx",
+      "args": [
+        "mcp-remote",
+        "https://starlecta.com/mcp",
+        "--header",
+        "Authorization: Bearer ${STARLECTA_KEY}"
+      ],
+      "env": {
+        "STARLECTA_KEY": "slk_YOUR_KEY"
+      }
+    }
+  }
+}

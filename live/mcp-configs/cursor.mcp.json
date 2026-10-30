@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "starlecta": {
+      "url": "https://starlecta.com/mcp",
+      "headers": {
+        "Authorization": "Bearer slk_YOUR_KEY"
+      }
+    }
+  }
+}
