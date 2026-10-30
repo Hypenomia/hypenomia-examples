@@ -38,7 +38,7 @@ The key starts with `slk_` and is shown once; Starlecta keeps only a hash. Keys 
 
 - Lookup: `GET https://starlecta.com/api/agent/tools/lookup?handle=<instagram handle>`
 - Compare: `GET https://starlecta.com/api/agent/tools/compare?a=<handle>&b=<handle>`
-- Search: `GET https://starlecta.com/api/agent/tools/search?category=<code>&tier=<micro|macro|mega>&followers_min=<n>&followers_max=<n>&er_measured=<true|false>` (every filter is optional)
+- Search: `GET https://starlecta.com/api/agent/tools/search?category=<code>&tier=<nano|micro|macro|mega>&followers_min=<n>&followers_max=<n>&er_measured=<true|false>` (every filter is optional)
 - AI search: `POST https://starlecta.com/api/agent/tools/ai-search` with `{"sentence": "<one sentence, 2 to 200 characters>"}`. The sentence is read as the same filters as Search (fast mode only).
 
 **What an answer holds:** each handle is `open` (public follower count and measured engagement rate, dated), `tracked` (name, tier, category and a rounded follower band, no metric) or `not_listed` (no match, or an account that cannot be shown). Search returns a count (shown as `fewer than 10` below 10), up to two open cards and the number of locked results; it never lists tracked or locked identities. The Starlecta Quality Score is not part of these tools for named creators. Quote a figure together with its date.
