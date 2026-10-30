@@ -6,7 +6,7 @@
 
 The [MIT licence](LICENSE) in this repository covers the **code only**: the workflows, the MCP server, the tests and the documentation text.
 
-It does **not** cover Starlecta data. The sample files in this repository (`fixtures/`, `mcp-server/test/fixtures/`) are **synthetic test data**. They are not real measurements and are not published Starlecta data. This repository ships synthetic fixtures and code only. Synthetic fixtures may carry `"source_url": null`, which means "not published"; published editions, when they exist, carry their own source links.
+It does **not** cover Starlecta data. The sample files in this repository (`fixtures/`, `mcp-server/test/fixtures/`) are **synthetic test data**. They are not real measurements and are not published Starlecta data. This repository ships synthetic fixtures and code only, apart from one short Trend Cloud excerpt (public aggregate counts from starlecta.com, dated 2026-10-30) shown in the README and `live/WALKTHROUGH.md`; the live tools themselves are governed by the [terms of use](https://starlecta.com/en/terms) and the key terms in [auth.md](https://starlecta.com/auth.md). Synthetic fixtures may carry `"source_url": null`, which means "not published"; published editions, when they exist, carry their own source links.
 
 ## Published Starlecta data
 

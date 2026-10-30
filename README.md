@@ -8,7 +8,7 @@ Open examples for [Starlecta](https://starlecta.com), an influencer analytics pl
 
 ## Live tools on starlecta.com
 
-Besides the offline examples below, Starlecta runs free tools on real data. Everything in this section is hosted by Starlecta; the code in this repository only calls it. Source of truth for access, limits and endpoints: [starlecta.com/auth.md](https://starlecta.com/auth.md) (page index: [llms.txt](https://starlecta.com/llms.txt)).
+Besides the offline examples below, Starlecta runs free tools on real data. Everything in this section is hosted by Starlecta; the code in this repository only calls it. Source of truth for access, limits and endpoints: [starlecta.com/auth.md](https://starlecta.com/auth.md). More: [docs](https://starlecta.com/en/docs), page index [llms.txt](https://starlecta.com/llms.txt), MCP [server card](https://starlecta.com/.well-known/mcp/server-card.json).
 
 **Free web tools** (in a browser, no sign-up):
 
